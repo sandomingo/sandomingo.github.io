@@ -5,13 +5,14 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>[Linux]历史命令快捷操作 - San Domingo's Blog</title>
+  <title>Vim 学习笔记(持续更新中) - San Domingo's Blog</title>
   <meta name="author" content="San Domingo">
 
   
-  <meta name="description" content="查看历史命令： $ history
-$ history 100 #最近100条历史记录 快速执行历史记录： 方法1: Ctrl+r(reverse intelligent search交互式搜索)，根据输出显示最近输入的命令，再按Ctrl + r会将匹配结果循环展示(Ctrl+g退出)
-方法2: &hellip;">
+  <meta name="description" content="vim的操作操作是基于模式的，常见的模式包括 插入模式 (INSERT)
+编辑模式 (NORMAL)
+可视模式 (VISUAL)
+命令行模式 (:) Normal 模式是是最常用的模式，在normal模式下可以通过按键命令进入其他模式，在其他模式下，通过Esc可以回到Normal模式。 操作 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +21,7 @@ $ history 100 #最近100条历史记录 快速执行历史记录： 方法1: Ctr
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://sandomingo.github.io/blog/2014/04/06/linux-history-shortcut">
+  <link rel="canonical" href="http://sandomingo.github.io/blog/2014/04/10/my-vim-cheatsheet">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="San Domingo's Blog" type="application/atom+xml">
@@ -70,7 +71,7 @@ $ history 100 #最近100条历史记录 快速执行历史记录： 方法1: Ctr
   
   <header>
     
-      <h1 class="entry-title">[Linux]历史命令快捷操作</h1>
+      <h1 class="entry-title">Vim 学习笔记(持续更新中)</h1>
     
     
       <p class="meta">
@@ -86,7 +87,7 @@ $ history 100 #最近100条历史记录 快速执行历史记录： 方法1: Ctr
   
 
 
-<time datetime="2014-04-06T20:47:35+08:00" pubdate data-updated="true">Apr 6<span>th</span>, 2014</time>
+<time datetime="2014-04-10T13:35:29+08:00" pubdate data-updated="true">Apr 10<span>th</span>, 2014</time>
         
          
           | <a href="#comments">Comments</a>
@@ -96,30 +97,125 @@ $ history 100 #最近100条历史记录 快速执行历史记录： 方法1: Ctr
   </header>
 
 
-<div class="entry-content"><ul>
-<li><p> 查看历史命令：</p>
+<div class="entry-content"><p>vim的操作操作是基于模式的，常见的模式包括</p>
 
 <ul>
-<li>$ history</li>
-<li>$ history 100  #最近100条历史记录</li>
+<li>插入模式 (INSERT)</li>
+<li>编辑模式 (NORMAL)</li>
+<li>可视模式 (VISUAL)</li>
+<li>命令行模式 (:)</li>
 </ul>
-</li>
-<li><p> 快速执行历史记录：</p>
+
+
+<p>Normal 模式是是最常用的模式，在normal模式下可以通过按键命令进入其他模式，在其他模式下，通过<code>Esc</code>可以回到Normal模式。</p>
+
+<h1>操作</h1>
+
+<h2>编辑模式(Normal)下的操作</h2>
+
+<p>在其他模式下按<code>Esc</code>进入<strong>Normal模式</strong></p>
+
+<blockquote><p>命令</p>
 
 <ul>
-<li>方法1: Ctrl+r(reverse intelligent search交互式搜索)，根据输出显示最近输入的命令，再按Ctrl + r会将匹配结果循环展示(Ctrl+g退出)</li>
-<li><p>方法2:使用!</p>
+<li>hjkl -> 光标移动，对应为←↓↑→。</li>
+<li>0 -> 光标移动到行头</li>
+<li>^ -> 光标移动到本行第一个非空字符的位置</li>
+<li>$ -> 光标移动到本行行末</li>
+<li>g_ -> 光标移动到本行最后一个非空字符的位置></li>
+<li>f&lt;a-char> -> 在当前行内，光标移动到下一个&lt;a-char>字符所在位置</li>
+<li>F&lt;a-char> -> 同f&lt;a-char>，但为反方向的移动</li>
+<li>&lt;a-num>f&lt;a-char> -> 在当前行内，光标移动到第&lt;a-num>个&lt;a-char>字符所在位置</li>
+<li>t&lt;a-char> -> 在当前行内，光标移动到第一个&lt;a-char>字符的前一个字符位置</li>
+<li>T&lt;a-char> -> 同t&lt;a-char>, 但为反方向移动</li>
+<li>&lt;Line-Number>G -> 光标跳到&lt;Line-Number>指定的行</li>
+<li>gg -> 到第一行</li>
+<li>G -> 到最后一行</li>
+<li>w -> 光标移动到下一个单词(word)的开头</li>
+<li>e -> 光标移动到下一个单词的末尾(end)</li>
+<li>% -> 在当前行将光标移动到括号所在位置，多次按％可以在多个多个括号之间切换</li>
+<li>* -> 将光标移动到当前匹配当前光标所在词的下一个</li>
+<li># -> 将光标移动到当前匹配当前光标所在词的上一个</li>
+<li>u -> 撤销上一次操作(undo)</li>
+<li>&lt;C-r> -> 恢复上一次操作(redo)</li>
+<li>/&lt;a-pattern> -> 搜索匹配&lt;a-pattern>的字符，按n可以跳到下一个匹配项</li>
+<li>x -> 删除当前字符</li>
+<li>dd -> 删除当前行，并保存到剪贴板</li>
+<li>d&lt;a-char> -> 在当前行内，删除光标位置到&lt;a-char>之前的字符</li>
+<li>p -> 粘贴</li>
+<li>a -> 在光标后插入(append)，并进入插入模式</li>
+<li>A -> 在行末插入，并进入插入模式</li>
+<li>o -> 在当前行前插入，并进入插入模式</li>
+<li>O -> 在当前行后插入，并进入插入模式</li>
+<li>cw -> 替换从光标所在位置到一个单词结尾的字符(change word)，并进入插入模式</li>
+<li>ZZ -> 保存并退出</li>
+<li>. -> 小数点，重复上一个命令</li>
+<li>&lt;a-num>&lt;a-command> -> 重复执行&lt;a-num>次&lt;a-command>命令</li>
+<li>gUU -> 将当前行的字符串变大写</li>
+<li>guu -> 将当前行的字符串变小写</li>
+<li>yy -> 拷贝当前行</li>
+<li>ye -> 拷贝光标所在位置到本单词最后一个字符的字符串</li>
+<li>>> -> 当前行向右缩减</li>
+<li>&lt;&lt; -> 当前行向左缩进</li>
+<li>== -> 自动缩减</li>
+<li>J => 删除当前行的换行符，即将下一行与当前行连接起来</li>
+</ul>
+</blockquote>
+
+<h2>插入模式下的操作</h2>
+
+<p>在Normal模式中输入<code>i</code>进入<strong>插入模式</strong></p>
+
+<blockquote><p>命令</p>
 
 <ul>
-<li>$ !!  #执行最近一条命令</li>
-<li>$ !5  #执行history中编号为5的命令</li>
-<li>$ !字符串 #执行命令中最近一条与字符串匹配的命令</li>
+<li>&lt;C-n> -> 自动补全，next</li>
+<li>&lt;C-p> -> 自动补全，previous</li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
+</blockquote>
 
+<h2>可视模式下的操作</h2>
+
+<p>在Normal模式中输入<code>v</code>进入<strong>可视模式</strong></p>
+
+<blockquote><p>命令</p>
+
+<ul>
+<li>hjkl -> 或使用←↓↑→来创建选区</li>
+<li>i&lt;an-object> -> 区域选择，不包括&lt;an-object>的区域，&lt;an-object>可以为一个字符，或者一个单词</li>
+<li>a&lt;an-object> -> 区域选择，包括&lt;an-object>的区域</li>
+</ul>
+</blockquote>
+
+<h2>命令行模式下的操作</h2>
+
+<p>在Normal模式中输入<code>:</code>进入<strong>命令行模式</strong></p>
+
+<blockquote><p>命令</p>
+
+<ul>
+<li>wq -> 保存并退出</li>
+<li>x -> 保存并退出</li>
+<li>w -> 保存，可以加文件名w filename</li>
+<li>q -> 退出</li>
+<li>q! -> 不保存退出</li>
+<li>e <path2file> -> 打开一个文件</li>
+<li>saveas <path2file> -> 另存为</li>
+<li>n -> 切换到下一个文件</li>
+<li>&lt;Line-Number> -> 光标跳转到&lt;Line-Number>指定行</li>
+</ul>
+</blockquote>
+
+<h2>其他技巧</h2>
+
+<blockquote><p>块操作</p>
+
+<ol>
+<li>&lt;C-v> -> 开始块操作</li>
+<li>&lt;C-n> -> 向下选择块，(也可以使用其他方式来选择)</li>
+<li>&lt;any-command><code>ESC</code> -> 执行command，<code>ESC</code>键使得操作对区块的每一行生效</li>
+</ol>
+</blockquote>
 </div>
 
 
@@ -142,14 +238,8 @@ $ history 100 #最近100条历史记录 快速执行历史记录： 方法1: Ctr
   
 
 
-<time datetime="2014-04-06T20:47:35+08:00" pubdate data-updated="true">Apr 6<span>th</span>, 2014</time>
+<time datetime="2014-04-10T13:35:29+08:00" pubdate data-updated="true">Apr 10<span>th</span>, 2014</time>
       
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/linux/'>Linux</a>
-  
-</span>
 
 
     </p>
@@ -167,10 +257,8 @@ $ history 100 #最近100条历史记录 快速执行历史记录： 方法1: Ctr
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2014/04/05/my-init/" title="Previous Post: 开始，第一篇">&laquo; 开始，第一篇</a>
+        <a class="basic-alignment left" href="/blog/2014/04/06/geek-alphabet/" title="Previous Post: Geek Alphabet">&laquo; Geek Alphabet</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2014/04/06/geek-alphabet/" title="Next Post: Geek Alphabet">Geek Alphabet &raquo;</a>
       
     </p>
   </footer>
