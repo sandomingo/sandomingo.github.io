@@ -4,7 +4,7 @@
   <title><![CDATA[San Domingo's Blog]]></title>
   <link href="http://sandomingo.github.io/atom.xml" rel="self"/>
   <link href="http://sandomingo.github.io/"/>
-  <updated>2014-04-18T18:07:24+08:00</updated>
+  <updated>2014-04-18T18:18:52+08:00</updated>
   <id>http://sandomingo.github.io/</id>
   <author>
     <name><![CDATA[San Domingo]]></name>
@@ -22,18 +22,18 @@
 
 <h3>准备工作</h3>
 
-<p>SSD一块，PH00(十字)、T6(六角)号螺丝刀、OS X安装盘(这里使用移动硬盘制作了一个bootable的安装器来替代)
+<p>SSD一块，PH00(十字)、T6(六角)号螺丝刀、OS X安装盘(这里使用移动硬盘制作了一个bootable的安装器来替代)。
 <img src="http://sandomingo.github.io/images/install_ssd/tools.JPG"></p>
 
-<p>制作一个Bootable OS X installer(这里制作的是Mavericks的installer)</p>
+<p>制作一个Bootable OS X installer(这里制作的是Mavericks的installer)：</p>
 
 <blockquote><ol>
-<li><p>去App Store下载OS X，下载完后不要点安装，可以再/Applications/目录下找到Install OS X Mavericks.app</p></li>
+<li><p>去App Store下载OS X，下载完后不要点安装，可以再/Applications/目录下找到Install OS X Mavericks.app。</p></li>
 <li><p>准备一个有8GB或者以上容量的U盘，或者移动硬盘(我是给移动硬盘创建了一个8GB的分区)，插USB，假设挂载在了/Volumes/OSXInstaller目录下。</p></li>
-<li><p>使用Install OS X Mavericks.app自带的工具来制作启动盘</p></li>
-<li><p>打开终端，执行命令
+<li><p>使用Install OS X Mavericks.app自带的工具来制作启动盘。</p></li>
+<li><p>打开终端，执行命令：
    <code>$ /Applications/Install\ OS\ X\ Mavericks.app/Contents/Resources/createinstallmedia</code></p></li>
-<li><p>该命令会提示你按一定的格式使用该命令， 应该加上系统安装器的目的路径，如上面假设的/Volumes/OSXInstaller</p></li>
+<li><p>该命令会提示你按一定的格式使用该命令， 应该加上系统安装器的目的路径，如上面假设的/Volumes/OSXInstaller。</p></li>
 <li><p>等待一会儿。</p></li>
 <li><p>Done.</p></li>
 </ol>
@@ -49,9 +49,9 @@
 <img src="http://sandomingo.github.io/images/install_ssd/remove_sidebar.JPG"></p></li>
 <li><p>拔出sata数据线。
 <img src="http://sandomingo.github.io/images/install_ssd/remove_sata_cable.JPG"></p></li>
-<li><p>装入SSD，并固定好螺丝。(这里在SSD正面安装了SanDisk提供的衬垫来帮助固定)
+<li><p>装入SSD，并固定好螺丝(这里在SSD正面安装了SanDisk提供的衬垫来帮助固定)。
 <img src="http://sandomingo.github.io/images/install_ssd/put_ssd2bay.JPG"></p></li>
-<li><p>Done</p>
+<li><p>Done.</p>
 
 <blockquote><p>Tips: 建议底部面板完成系统安装后再上螺丝，避免因意外而引起不必要的麻烦。</p></blockquote></li>
 </ul>
