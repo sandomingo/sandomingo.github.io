@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Macbook Pro外接显示器分辨率问题 - San Domingo's Blog</title>
+  <meta name="author" content="San Domingo">
+
+  
+  <meta name="description" content="今天被坑惨了TAT，重新安装了Mavericks后，使用thunderbolt转VGA外接显示器时遇到了分辨率的问题：外接显示器支持1080P的分辨率，但在OS X的Display设置中只能选择最高1280*1024的分辨率。google了许久，尝试了重启、合上盖外接显示器重启， &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://sandomingo.github.io/blog/2014/04/16/macbookpro-external-display-resolution-problem">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="San Domingo's Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">San Domingo's Blog</a></h1>
+  
+    <h2>Courage, Duty, Honor!</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:sandomingo.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Macbook Pro外接显示器分辨率问题</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-16T15:51:50+08:00" pubdate data-updated="true">Apr 16<span>th</span>, 2014</time>
+        
+         
+          | <a href="#comments">Comments</a>
+         
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>今天被坑惨了TAT，重新安装了Mavericks后，使用thunderbolt转VGA外接显示器时遇到了分辨率的问题：外接显示器支持1080P的分辨率，但在OS X的Display设置中只能选择最高1280*1024的分辨率。google了许久，尝试了重启、合上盖外接显示器重启，重置NVRM都没有效果。最后在<a href="http://chris.dziemborowicz.com/blog/2012/07/04/fix-external-monitor-resolution-on-macbook-pro-with-retina-display/">这里</a>发现了问题的解决方案。</p>
+
+<p>具体做法很是简单：
+打开Displays窗口，默认的分辨率中没有我们需要的1080P
+<img src="../images/os_x_displays/origin.png">
+在外接显示器的分辨率设置中按住键盘上的<code>Option</code>键，再点击 <strong>Scaled</strong> 选项,此时会发现分辨率选项多了很多选择，问题迎刃而解。
+<img src="../images/os_x_displays/clickWithOption.png"></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">San Domingo</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-16T15:51:50+08:00" pubdate data-updated="true">Apr 16<span>th</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/os-x/'>OS X</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+  
+    <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/04/10/my-vim-cheatsheet/" title="Previous Post: Vim 学习笔记(持续更新中)">&laquo; Vim 学习笔记(持续更新中)</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/04/16/re-enable-key-repeat-in-os-x-mavericks/" title="Next Post: Re-enable key repeat in OS X Mavericks">Re-enable key repeat in OS X Mavericks &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+
+  <section>
+    <h1>Comments</h1>
+    <div id="comments" aria-live="polite"><!-- Duoshuo Comment BEGIN -->
+    <div class="ds-thread"></div>
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"dinever"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = 'http:/.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+<!-- Duoshuo Comment END -->
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/04/16/re-enable-key-repeat-in-os-x-mavericks/">Re-enable Key Repeat in OS X Mavericks</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/16/macbookpro-external-display-resolution-problem/">Macbook Pro外接显示器分辨率问题</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/10/my-vim-cheatsheet/">Vim 学习笔记(持续更新中)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/06/geek-alphabet/">Geek Alphabet</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/06/linux-history-shortcut/">Linux历史命令快捷操作</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+    <h1>About Me</h1>
+    <p>满是好奇心的未来工程师一枚</p>
+    <p>weibo:<a href="http://weibo.com/sandomingo">@SanDomingo</a></p>
+</section>
+<section>
+<h1>Recent Comments</h1>
+<ul class="ds-recent-comments" data-num-items="10" data-show-avatars="1" data-show-time="1" data-show-admin="1" data-excerpt-length="70">
+</ul>
+<!--多说js加载开始，一个页面只需要加载一次 -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"SanDomingo"};
+(function() {
+var ds = document.createElement('script');
+ds.type = 'text/javascript';
+ds.async = true;ds.src = 'http://static.duoshuo.com/embed.js';
+ds.charset = 'UTF-8';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+<!--多说js加载结束，一个页面只需要加载一次 -->
+</section>
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - San Domingo -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
