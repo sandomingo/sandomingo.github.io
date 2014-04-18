@@ -4,7 +4,7 @@
   <title><![CDATA[Category: OS X | San Domingo's Blog]]></title>
   <link href="http://sandomingo.github.io/blog/categories/os-x/atom.xml" rel="self"/>
   <link href="http://sandomingo.github.io/"/>
-  <updated>2014-04-18T18:00:55+08:00</updated>
+  <updated>2014-04-18T18:07:24+08:00</updated>
   <id>http://sandomingo.github.io/</id>
   <author>
     <name><![CDATA[San Domingo]]></name>
@@ -38,9 +38,9 @@
 
 <p>具体做法很是简单：
 打开Displays窗口，默认的分辨率中没有我们需要的1080P
-<img src="../images/os_x_displays/origin.png">
+<img src="/images/os_x_displays/origin.png">
 在外接显示器的分辨率设置中按住键盘上的<code>Option</code>键，再点击 <strong>Scaled</strong> 选项,此时会发现分辨率选项多了很多选择，问题迎刃而解。
-<img src="../images/os_x_displays/clickWithOption.png"></p>
+<img src="/images/os_x_displays/clickWithOption.png"></p>
 ]]></content>
   </entry>
   

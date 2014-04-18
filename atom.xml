@@ -4,7 +4,7 @@
   <title><![CDATA[San Domingo's Blog]]></title>
   <link href="http://sandomingo.github.io/atom.xml" rel="self"/>
   <link href="http://sandomingo.github.io/"/>
-  <updated>2014-04-18T18:00:55+08:00</updated>
+  <updated>2014-04-18T18:07:24+08:00</updated>
   <id>http://sandomingo.github.io/</id>
   <author>
     <name><![CDATA[San Domingo]]></name>
@@ -23,7 +23,7 @@
 <h3>准备工作</h3>
 
 <p>SSD一块，PH00(十字)、T6(六角)号螺丝刀、OS X安装盘(这里使用移动硬盘制作了一个bootable的安装器来替代)
-<img src="../images/install_ssd/tools.JPG"></p>
+<img src="http://sandomingo.github.io/images/install_ssd/tools.JPG"></p>
 
 <p>制作一个Bootable OS X installer(这里制作的是Mavericks的installer)</p>
 
@@ -44,13 +44,13 @@
 <ul>
 <li><p>操作前关机拔电。</p></li>
 <li><p>拆开底部面板(记得保持螺丝有序，稍用心看就会发现中间左右两个短螺丝和其他的几颗短螺丝是不一样的)，可以看到HDD在电池旁边。
-<img src="../images/install_ssd/origin_hdd.JPG"></p></li>
+<img src="http://sandomingo.github.io/images/install_ssd/origin_hdd.JPG"></p></li>
 <li><p>取出原有的HDD仅需取下HDD和光驱之间的两颗螺丝。
-<img src="../images/install_ssd/remove_sidebar.JPG"></p></li>
+<img src="http://sandomingo.github.io/images/install_ssd/remove_sidebar.JPG"></p></li>
 <li><p>拔出sata数据线。
-<img src="../images/install_ssd/remove_sata_cable.JPG"></p></li>
+<img src="http://sandomingo.github.io/images/install_ssd/remove_sata_cable.JPG"></p></li>
 <li><p>装入SSD，并固定好螺丝。(这里在SSD正面安装了SanDisk提供的衬垫来帮助固定)
-<img src="../images/install_ssd/put_ssd2bay.JPG"></p></li>
+<img src="http://sandomingo.github.io/images/install_ssd/put_ssd2bay.JPG"></p></li>
 <li><p>Done</p>
 
 <blockquote><p>Tips: 建议底部面板完成系统安装后再上螺丝，避免因意外而引起不必要的麻烦。</p></blockquote></li>
@@ -61,14 +61,14 @@
 
 <p>因为之前系统被自己折腾的很是糟糕，已经无力回天了，所以<strong>备份好数据</strong>重装系统。
 * 插入bootable OS X installer(这里我用的是一个移动硬盘)，按<code>OPTION</code>键，可以进入启动盘的选择界面。
-<img src="../images/install_ssd/boot2install.JPG"></p>
+<img src="http://sandomingo.github.io/images/install_ssd/boot2install.JPG"></p>
 
 <ul>
 <li><p>使用Disk Utility给新安装的硬盘分区。这里选择一个分区，选择Mac OS Extended(Journaled)分区格式，点击分区下方的<code>OPTION</code>选项，因为我的是intel-based的Mac，所以选择GUID分区表。点击<code>Apply</code>完成分区。
-<img src="../images/install_ssd/partition.JPG">
-<img src="../images/install_ssd/partition_schema.JPG"></p></li>
+<img src="http://sandomingo.github.io/images/install_ssd/partition.JPG">
+<img src="http://sandomingo.github.io/images/install_ssd/partition_schema.JPG"></p></li>
 <li><p>关闭Disk Utility, 在菜单中选择安装系统。选择将OS X安装到新的SSD。等待2分钟后，系统自动重启后继续安装，又等待20分钟后，完成安装。
-<img src="../images/install_ssd/install_os_x.JPG"></p></li>
+<img src="http://sandomingo.github.io/images/install_ssd/install_os_x.JPG"></p></li>
 </ul>
 
 
@@ -105,9 +105,9 @@
 
 <p>具体做法很是简单：
 打开Displays窗口，默认的分辨率中没有我们需要的1080P
-<img src="../images/os_x_displays/origin.png">
+<img src="http://sandomingo.github.io/images/os_x_displays/origin.png">
 在外接显示器的分辨率设置中按住键盘上的<code>Option</code>键，再点击 <strong>Scaled</strong> 选项,此时会发现分辨率选项多了很多选择，问题迎刃而解。
-<img src="../images/os_x_displays/clickWithOption.png"></p>
+<img src="http://sandomingo.github.io/images/os_x_displays/clickWithOption.png"></p>
 ]]></content>
   </entry>
   
