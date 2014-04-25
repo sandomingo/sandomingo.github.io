@@ -4,7 +4,7 @@
   <title><![CDATA[San Domingo's Blog]]></title>
   <link href="http://sandomingo.github.io/atom.xml" rel="self"/>
   <link href="http://sandomingo.github.io/"/>
-  <updated>2014-04-23T00:08:03+08:00</updated>
+  <updated>2014-04-25T17:50:40+08:00</updated>
   <id>http://sandomingo.github.io/</id>
   <author>
     <name><![CDATA[San Domingo]]></name>
@@ -12,6 +12,71 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Mac新手的使用指南(编写中)]]></title>
+    <link href="http://sandomingo.github.io/blog/2014/04/25/i-am-new-to-mac/"/>
+    <updated>2014-04-25T14:02:25+08:00</updated>
+    <id>http://sandomingo.github.io/blog/2014/04/25/i-am-new-to-mac</id>
+    <content type="html"><![CDATA[<p>最近好友aKai终于从Linux阵营倒戈到了OS X，作为一名酷爱DIY的用户，他甚是不习惯OS X的各种操作，问了很多让Mac用户很是意外的简单问题。于是，想想还是在这里记录一下，为了日后有新的小伙伴倒戈来OS X留下入门必读的第一手资料。（本文是基于OS X 10.9.2 Mavericks）</p>
+
+<p><code>本着易学易会的原则，尽可能将缩写、快捷键的完整英文表示写出来，OS X的很多操作都是很直觉式的操作，掌握了其根本思想后，日后自然便驾轻就熟了。</code></p>
+
+<h1>安装软件</h1>
+
+<p>OS X上安装软件其实更像是Win和Linux的结合体，一般有一下几种安装方式:</p>
+
+<ol>
+<li>如同Linux的软件中心，OS X有App Store，搜索软件，点击安装，输入apple ID确认即可。</li>
+<li>如同Win的iso光盘镜像，OS X有dmg(Disk Image)格式的镜像，会自动弹出一个窗口，一般包括一个app后缀的文件，和一个Applications文件夹的软连接（快捷方式 for Win用户），只需要拖动app文件放入Applications文件夹即可。
+
+<ul>
+<li><em>如果发现双击后没有弹出任何窗口，可以在Finder的左边栏->设备(Devices)中找到刚刚点击的光盘镜像，点击后可以在Finder窗口中发现app文件和Applications文件夹。这里的Applications软链接指向的是/Applications文件夹，这也可以在Finder的左边栏里找到。可以直接把app文件拖入该文件夹完成安装。</em></li>
+</ul>
+</li>
+<li>如同Linux中的rpm安装包，Win的exe安装包，OS X有pkg安装包，直接双击，按照提示完成安装即可。
+
+<ul>
+<li><em>有时pkg安装包会封装在光盘镜像dmg中，也按照pkg安装包的方式安装即可。</em></li>
+</ul>
+</li>
+<li>如同Linux的apt-get, rpm包管理工具命令，OS X有brew，详细使用可google brew。</li>
+</ol>
+
+
+<h1>日常操作</h1>
+
+<h3>打开软件</h3>
+
+<p>Win用户和Linux会把常用的软件放在桌面上，而OS X一般是将常用的软件放在Dock上。所有安装的软件都可以在/Applications文件夹里或点击Dock上的Launchpad找到。更快捷的方式是使用spotlight(屏幕右上角的放大镜)根据应用名来快速检索并打开应用。</p>
+
+<h3>关机</h3>
+
+<p>合上屏幕即可，OS X拥有混合睡眠的待机模式，不需要关机，合上屏幕即可带走，打开屏幕便可以使用。</p>
+
+<h1>系统设置</h1>
+
+<h3>虚拟桌面</h3>
+
+<p>打开Mission Control.app，将鼠标滑到屏幕右上角的区域，会出现一个添加桌面的按钮，点击即可。</p>
+
+<h1>快捷键篇</h1>
+
+<p>OS X的默认快捷键一般是基于<code>ctrl</code>, <code>opt</code>, <code>cmd</code> (分别对应control, option, command键)加上其他按键组合完成的。</p>
+
+<h3>日常编辑</h3>
+
+<ul>
+<li><code>cmd</code> + <code>c</code> 复制</li>
+<li><code>cmd</code> + <code>v</code> 粘贴</li>
+<li>（很遗憾，OS X木有剪切的快捷键，不过可以通过想Win用户使用鼠标拖动来完成移动或者像Linux用户在终端(Terminal)中使用mv命令来完成操作）</li>
+<li><code>return</code> 文件重命名(!!!不是打开文件，如果需要打开文件，请使用下一条命令)</li>
+<li><code>cmd</code> + <code>o</code> 打开文件</li>
+<li><code>space</code> 快速预览文件</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[给MacBook Pro换SSD]]></title>

@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Re-enable Key Repeat in OS X Mavericks - San Domingo's Blog</title>
+  <title>Mac新手的使用指南(编写中) - San Domingo's Blog</title>
   <meta name="author" content="San Domingo">
 
   
-  <meta name="description" content="今天在安装idealVim的时候，提示我是否需要Enable key repeat，没有过脑子就点了No，结果在vim操作时就有些小崩溃了。长按hjkl时没有办法连续移动。因此还是想办法重新Enable key repeat吧。 在命令行中执行以下命令 $ defaults write -g &hellip;">
+  <meta name="description" content="最近好友aKai终于从Linux阵营倒戈到了OS X，作为一名酷爱DIY的用户，他甚是不习惯OS X的各种操作，问了很多让Mac用户很是意外的简单问题。于是，想想还是在这里记录一下，为了日后有新的小伙伴倒戈来OS X留下入门必读的第一手资料。（本文是基于OS X 10.9.2 Mavericks &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://sandomingo.github.io/blog/2014/04/16/re-enable-key-repeat-in-os-x-mavericks">
+  <link rel="canonical" href="http://sandomingo.github.io/blog/2014/04/25/i-am-new-to-mac">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="San Domingo's Blog" type="application/atom+xml">
@@ -68,7 +68,7 @@
   
   <header>
     
-      <h1 class="entry-title">Re-enable Key Repeat in OS X Mavericks</h1>
+      <h1 class="entry-title">Mac新手的使用指南(编写中)</h1>
     
     
       <p class="meta">
@@ -84,7 +84,7 @@
   
 
 
-<time datetime="2014-04-16T16:06:20+08:00" pubdate data-updated="true">Apr 16<span>th</span>, 2014</time>
+<time datetime="2014-04-25T14:02:25+08:00" pubdate data-updated="true">Apr 25<span>th</span>, 2014</time>
         
          
           | <a href="#comments">Comments</a>
@@ -94,14 +94,63 @@
   </header>
 
 
-<div class="entry-content"><p>今天在安装idealVim的时候，提示我是否需要Enable key repeat，没有过脑子就点了No，结果在vim操作时就有些小崩溃了。长按<code>hjkl</code>时没有办法连续移动。因此还是想办法重新Enable key repeat吧。</p>
+<div class="entry-content"><p>最近好友aKai终于从Linux阵营倒戈到了OS X，作为一名酷爱DIY的用户，他甚是不习惯OS X的各种操作，问了很多让Mac用户很是意外的简单问题。于是，想想还是在这里记录一下，为了日后有新的小伙伴倒戈来OS X留下入门必读的第一手资料。（本文是基于OS X 10.9.2 Mavericks）</p>
 
-<p>在命令行中执行以下命令</p>
+<p><code>本着易学易会的原则，尽可能将缩写、快捷键的完整英文表示写出来，OS X的很多操作都是很直觉式的操作，掌握了其根本思想后，日后自然便驾轻就熟了。</code></p>
 
-<pre><code>$ defaults write -g ApplePressAndHoldEnabled -bool false
-</code></pre>
+<h1>安装软件</h1>
 
-<p>重启，搞定。</p>
+<p>OS X上安装软件其实更像是Win和Linux的结合体，一般有一下几种安装方式:</p>
+
+<ol>
+<li>如同Linux的软件中心，OS X有App Store，搜索软件，点击安装，输入apple ID确认即可。</li>
+<li>如同Win的iso光盘镜像，OS X有dmg(Disk Image)格式的镜像，会自动弹出一个窗口，一般包括一个app后缀的文件，和一个Applications文件夹的软连接（快捷方式 for Win用户），只需要拖动app文件放入Applications文件夹即可。
+
+<ul>
+<li><em>如果发现双击后没有弹出任何窗口，可以在Finder的左边栏->设备(Devices)中找到刚刚点击的光盘镜像，点击后可以在Finder窗口中发现app文件和Applications文件夹。这里的Applications软链接指向的是/Applications文件夹，这也可以在Finder的左边栏里找到。可以直接把app文件拖入该文件夹完成安装。</em></li>
+</ul>
+</li>
+<li>如同Linux中的rpm安装包，Win的exe安装包，OS X有pkg安装包，直接双击，按照提示完成安装即可。
+
+<ul>
+<li><em>有时pkg安装包会封装在光盘镜像dmg中，也按照pkg安装包的方式安装即可。</em></li>
+</ul>
+</li>
+<li>如同Linux的apt-get, rpm包管理工具命令，OS X有brew，详细使用可google brew。</li>
+</ol>
+
+
+<h1>日常操作</h1>
+
+<h3>打开软件</h3>
+
+<p>Win用户和Linux会把常用的软件放在桌面上，而OS X一般是将常用的软件放在Dock上。所有安装的软件都可以在/Applications文件夹里或点击Dock上的Launchpad找到。更快捷的方式是使用spotlight(屏幕右上角的放大镜)根据应用名来快速检索并打开应用。</p>
+
+<h3>关机</h3>
+
+<p>合上屏幕即可，OS X拥有混合睡眠的待机模式，不需要关机，合上屏幕即可带走，打开屏幕便可以使用。</p>
+
+<h1>系统设置</h1>
+
+<h3>虚拟桌面</h3>
+
+<p>打开Mission Control.app，将鼠标滑到屏幕右上角的区域，会出现一个添加桌面的按钮，点击即可。</p>
+
+<h1>快捷键篇</h1>
+
+<p>OS X的默认快捷键一般是基于<code>ctrl</code>, <code>opt</code>, <code>cmd</code> (分别对应control, option, command键)加上其他按键组合完成的。</p>
+
+<h3>日常编辑</h3>
+
+<ul>
+<li><code>cmd</code> + <code>c</code> 复制</li>
+<li><code>cmd</code> + <code>v</code> 粘贴</li>
+<li>（很遗憾，OS X木有剪切的快捷键，不过可以通过想Win用户使用鼠标拖动来完成移动或者像Linux用户在终端(Terminal)中使用mv命令来完成操作）</li>
+<li><code>return</code> 文件重命名(!!!不是打开文件，如果需要打开文件，请使用下一条命令)</li>
+<li><code>cmd</code> + <code>o</code> 打开文件</li>
+<li><code>space</code> 快速预览文件</li>
+</ul>
+
 </div>
 
 
@@ -124,12 +173,12 @@
   
 
 
-<time datetime="2014-04-16T16:06:20+08:00" pubdate data-updated="true">Apr 16<span>th</span>, 2014</time>
+<time datetime="2014-04-25T14:02:25+08:00" pubdate data-updated="true">Apr 25<span>th</span>, 2014</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/os-x/'>OS X</a>
+    <a class='category' href='/blog/categories/mac/'>Mac</a>, <a class='category' href='/blog/categories/os-x/'>OS X</a>
   
 </span>
 
@@ -149,10 +198,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2014/04/16/macbookpro-external-display-resolution-problem/" title="Previous Post: Macbook Pro外接显示器分辨率问题">&laquo; Macbook Pro外接显示器分辨率问题</a>
+        <a class="basic-alignment left" href="/blog/2014/04/18/replace-macbook-pros-hdd-with-an-ssd/" title="Previous Post: 给MacBook Pro换SSD">&laquo; 给MacBook Pro换SSD</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2014/04/18/replace-macbook-pros-hdd-with-an-ssd/" title="Next Post: 给MacBook Pro换SSD">给MacBook Pro换SSD &raquo;</a>
       
     </p>
   </footer>
