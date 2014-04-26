@@ -4,7 +4,7 @@
   <title><![CDATA[Category: OS X | San Domingo's Blog]]></title>
   <link href="http://sandomingo.github.io/blog/categories/os-x/atom.xml" rel="self"/>
   <link href="http://sandomingo.github.io/"/>
-  <updated>2014-04-25T17:50:40+08:00</updated>
+  <updated>2014-04-26T13:00:33+08:00</updated>
   <id>http://sandomingo.github.io/</id>
   <author>
     <name><![CDATA[San Domingo]]></name>
@@ -40,7 +40,7 @@
 <li><em>有时pkg安装包会封装在光盘镜像dmg中，也按照pkg安装包的方式安装即可。</em></li>
 </ul>
 </li>
-<li>如同Linux的apt-get, rpm包管理工具命令，OS X有brew，详细使用可google brew。</li>
+<li>如同Linux的apt-get, yum包管理工具命令，OS X有brew，详细使用可google brew。</li>
 </ol>
 
 
