@@ -9,7 +9,7 @@
   <meta name="author" content="San Domingo">
 
   
-  <meta name="description" content="最近好友aKai终于从Linux阵营倒戈到了OS X，作为一名酷爱DIY的用户，他甚是不习惯OS X的各种操作，问了很多让Mac用户很是意外的简单问题。于是，想想还是在这里记录一下，为了日后有新的小伙伴倒戈来OS X留下入门必读的第一手资料。（本文是基于OS X 10.9.2 Mavericks &hellip;">
+  <meta name="description" content="最近在研究boilerplate这个页面自动抽取方法，结果遇到了Stack Overflow的问题，报错现实问题在org.cyberneko.html.HTMLTagBalancer.endElement这里。这个问题是偶尔出现，而且频率也不高，追踪了几天，也找不到问题究竟出在哪里。周末有空了， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +65,71 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/04/26/duplicate-class-in-different-jar/">[Java]不同Jar包中出现同名class引起的程序Bug</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-26T21:53:43+08:00" pubdate data-updated="true">Apr 26<span>th</span>, 2014</time>
+        
+         
+          | <a href="/blog/2014/04/26/duplicate-class-in-different-jar/#comments">Comments</a>
+         
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>最近在研究boilerplate这个页面自动抽取方法，结果遇到了Stack Overflow的问题，报错现实问题在<em>org.cyberneko.html.HTMLTagBalancer.endElement</em>这里。这个问题是偶尔出现，而且频率也不高，追踪了几天，也找不到问题究竟出在哪里。周末有空了，想想还是来认真fix一下这个bug吧。</p>
+
+<p>吸取了之前没有逻辑性的bug追踪过程，这次算是比较有条理的在解决问题，记录下解决思路，希望自己以后不要在栽在这样的坑里了。</p>
+
+<h3>发现问题</h3>
+
+<p>我们的java应用都是用shell脚本启动，在服务器上运行时，报出Stack Overflow的错误。接到报错后，立刻开始调试程序，在本地计算机上用shell脚本启动，也报同样的错误，然后在IDE中调试，一切正常。</p>
+
+<h3>解决思路</h3>
+
+<ol>
+<li>google了下这个问题，发现cyberneko官方有issue，承认这是个bug，并在新版本中已经修复。</li>
+<li>检查shell脚本，确认传入到Java程序中的参数时正确的。</li>
+<li>查看并对比了IDE和shell脚本启动Java程序的jvm参数。发现略有不一样，逐个对比调试发现在shell脚本中使用IDE配置的classpath运行程序竟然没有报错，这下问题定位到错在classpath上了。</li>
+<li>将shell和IDE中的classpah拿出来对比，发现cyberneko的版本一致，已经是最新的了。</li>
+<li><em>栽入坑中若干小时&hellip;</em>尝试对两个classpath配置逐条对比，并在正确的classpath上逐条来测试，企图重现错误。</li>
+<li><strong>许久才联想想到classload加载类的机制，才想到classpath中条目顺序的问题</strong>，试了一下，发现cyberneko和boilerpipe这两个jar包顺序如果颠倒了，就会报错。</li>
+<li><p>检查boilerpipe和cyberneko这两个jar包，发现问题根源</p>
+
+<blockquote><p>boilerpipe中竟然copy了cyberneko的两个类的代码，而且包名也没有修改，查看源码后，boilerpipe里copy的代码应该是比较旧版本的，因而导致了报错。</p></blockquote></li>
+<li><p>最后便是修复bug，我采取了比较简单的而暴力的方式，将boilerpipe的jar包中copy的代码直接删除，因为我的classpath中有cyberneko的jar包，所以在回归测试时，boilerpipe的抽取算法依然可用，至此，bug修复完毕。</p></li>
+</ol>
+
+
+<h3>事后</h3>
+
+<p>Bug追踪还是得顺藤摸瓜！切忌无脑失错。对于像我这种记性不好的，最好在纸张上记录下整个Bug追踪的线路，这样哪些路已经走过，哪些路走不通，哪些路还可以尝试，一目了然。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -772,6 +837,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/04/26/duplicate-class-in-different-jar/">[Java]不同Jar包中出现同名class引起的程序Bug</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/04/25/i-am-new-to-mac/">Mac新手的使用指南(编写中)</a>
       </li>
     
@@ -785,10 +854,6 @@
     
       <li class="post">
         <a href="/blog/2014/04/16/macbookpro-external-display-resolution-problem/">Macbook Pro外接显示器分辨率问题</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/04/10/my-vim-cheatsheet/">Vim 学习笔记(持续更新中)</a>
       </li>
     
   </ul>
