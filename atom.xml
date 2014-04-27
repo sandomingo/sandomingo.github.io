@@ -4,7 +4,7 @@
   <title><![CDATA[San Domingo's Blog]]></title>
   <link href="http://sandomingo.github.io/atom.xml" rel="self"/>
   <link href="http://sandomingo.github.io/"/>
-  <updated>2014-04-27T16:55:18+08:00</updated>
+  <updated>2014-04-27T17:30:47+08:00</updated>
   <id>http://sandomingo.github.io/</id>
   <author>
     <name><![CDATA[San Domingo]]></name>
@@ -49,7 +49,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Mac新手的使用指南(编写中)]]></title>
+    <title type="html"><![CDATA[Mac新手指南(编写中)]]></title>
     <link href="http://sandomingo.github.io/blog/2014/04/25/i-am-new-to-mac/"/>
     <updated>2014-04-25T14:02:25+08:00</updated>
     <id>http://sandomingo.github.io/blog/2014/04/25/i-am-new-to-mac</id>
@@ -99,15 +99,42 @@
 
 <p>OS X的默认快捷键一般是基于<code>ctrl</code>, <code>opt</code>, <code>cmd</code> (分别对应control, option, command键)加上其他按键组合完成的。</p>
 
-<h3>日常编辑</h3>
+<h3>功能键符号注释</h3>
 
 <ul>
+<li>↵ &ndash;> <code>return</code></li>
+<li>⇥ &ndash;> <code>tab</code></li>
+<li>⎋ &ndash;> <code>esc</code></li>
+<li>⇧ &ndash;> <code>shift</code></li>
+<li>⌫ &ndash;> <code>delete</code></li>
+<li>⌃ &ndash;> <code>control</code></li>
+<li>⌥ &ndash;> <code>option</code></li>
+<li>⌘ &ndash;> <code>command</code></li>
+</ul>
+
+
+<p><em>贴两张图，保证直观</em></p>
+
+<p><img src="http://sandomingo.github.io/images/misc/keyboard.png">
+<img src="http://sandomingo.github.io/images/misc/keyboard_full.png"></p>
+
+<h3>截图</h3>
+
+<ul>
+<li><code>cmd</code> + <code>shift</code> + <code>3</code> 截屏(等价于Print Screen)，保存到桌面</li>
+<li><code>cmd</code> + <code>shift</code> + <code>ctrl</code> + <code>3</code> 截屏，保存剪贴板</li>
+<li><code>cmd</code> + <code>shift</code> + <code>4</code> (+ <code>space</code> )截屏，自定义区域截图(指定窗口截图)</li>
+<li><code>cmd</code> + <code>shift</code> + <code>ctrl</code> + <code>4</code> (+ <code>space</code> )截屏，自定义区域选取(指定窗口截图)
+
+<h3>日常编辑</h3></li>
 <li><code>cmd</code> + <code>c</code> 复制</li>
 <li><code>cmd</code> + <code>v</code> 粘贴</li>
 <li><code>cmd</code> + <code>opt</code> + <code>v</code> 移动(剪切操作对应为：先复制，再移动)</li>
 <li><code>return</code> 文件重命名(!!!不是打开文件，如果需要打开文件，请使用下一条命令)</li>
 <li><code>cmd</code> + <code>o</code> 打开文件</li>
 <li><code>space</code> 快速预览文件</li>
+<li><code>delete</code> 删除前一个字符</li>
+<li><code>fn</code> + <code>delete</code> 删除后一个字符</li>
 </ul>
 
 
