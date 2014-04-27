@@ -4,7 +4,7 @@
   <title><![CDATA[Category: OS X | San Domingo's Blog]]></title>
   <link href="http://sandomingo.github.io/blog/categories/os-x/atom.xml" rel="self"/>
   <link href="http://sandomingo.github.io/"/>
-  <updated>2014-04-27T17:30:47+08:00</updated>
+  <updated>2014-04-27T17:32:01+08:00</updated>
   <id>http://sandomingo.github.io/</id>
   <author>
     <name><![CDATA[San Domingo]]></name>
@@ -89,9 +89,13 @@
 <li><code>cmd</code> + <code>shift</code> + <code>3</code> 截屏(等价于Print Screen)，保存到桌面</li>
 <li><code>cmd</code> + <code>shift</code> + <code>ctrl</code> + <code>3</code> 截屏，保存剪贴板</li>
 <li><code>cmd</code> + <code>shift</code> + <code>4</code> (+ <code>space</code> )截屏，自定义区域截图(指定窗口截图)</li>
-<li><code>cmd</code> + <code>shift</code> + <code>ctrl</code> + <code>4</code> (+ <code>space</code> )截屏，自定义区域选取(指定窗口截图)
+<li><code>cmd</code> + <code>shift</code> + <code>ctrl</code> + <code>4</code> (+ <code>space</code> )截屏，自定义区域选取(指定窗口截图)</li>
+</ul>
 
-<h3>日常编辑</h3></li>
+
+<h3>日常编辑</h3>
+
+<ul>
 <li><code>cmd</code> + <code>c</code> 复制</li>
 <li><code>cmd</code> + <code>v</code> 粘贴</li>
 <li><code>cmd</code> + <code>opt</code> + <code>v</code> 移动(剪切操作对应为：先复制，再移动)</li>
