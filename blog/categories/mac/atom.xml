@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Mac | San Domingo's Blog]]></title>
   <link href="http://sandomingo.github.io/blog/categories/mac/atom.xml" rel="self"/>
   <link href="http://sandomingo.github.io/"/>
-  <updated>2014-04-29T11:51:37+08:00</updated>
+  <updated>2014-04-29T14:59:20+08:00</updated>
   <id>http://sandomingo.github.io/</id>
   <author>
     <name><![CDATA[San Domingo]]></name>
@@ -28,7 +28,7 @@
 
 <ul>
 <li>Finder &ndash;> 资源管理器(Win)</li>
-<li>Activity Monitor &ndash;> 资源管理器(Win)</li>
+<li>Activity Monitor &ndash;> 任务管理器(Win)</li>
 <li><code>cmd</code>键 &ndash;> Ctrl键(Win，绝大多数情况下)</li>
 </ul>
 
