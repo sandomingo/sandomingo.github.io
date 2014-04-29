@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Mac | San Domingo's Blog]]></title>
   <link href="http://sandomingo.github.io/blog/categories/mac/atom.xml" rel="self"/>
   <link href="http://sandomingo.github.io/"/>
-  <updated>2014-04-29T10:39:24+08:00</updated>
+  <updated>2014-04-29T11:51:37+08:00</updated>
   <id>http://sandomingo.github.io/</id>
   <author>
     <name><![CDATA[San Domingo]]></name>
@@ -39,7 +39,7 @@
 
 <ol>
 <li>如同Linux的软件中心，OS X有App Store，搜索软件，点击安装，输入apple ID确认即可。</li>
-<li>如同Win的iso光盘镜像，OS X有dmg(Disk Image)格式的镜像，会自动弹出一个窗口，一般包括一个app后缀的文件，和一个Applications文件夹的软连接（快捷方式 for Win用户），只需要拖动app文件放入Applications文件夹即可。
+<li>如同Win的iso光盘镜像，OS X有dmg(Disk Image)格式的镜像，双击打开后一般会自动弹出一个窗口，一般包括一个app后缀的文件，和一个Applications文件夹的软连接（快捷方式 for Win用户），只需要拖动app文件放入Applications文件夹即可。
 
 <ul>
 <li><em>如果发现双击后没有弹出任何窗口，可以在Finder的左边栏->设备(Devices)中找到刚刚点击的光盘镜像，点击后可以在Finder窗口中发现app文件和Applications文件夹。这里的Applications软链接指向的是/Applications文件夹，这也可以在Finder的左边栏里找到。可以直接把app文件拖入该文件夹完成安装。</em></li>
