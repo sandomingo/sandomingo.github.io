@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: System | San Domingo's Blog]]></title>
+  <link href="http://sandomingo.github.io/blog/categories/system/atom.xml" rel="self"/>
+  <link href="http://sandomingo.github.io/"/>
+  <updated>2014-07-23T21:05:25+08:00</updated>
+  <id>http://sandomingo.github.io/</id>
+  <author>
+    <name><![CDATA[San Domingo]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[32bit or 64bit]]></title>
+    <link href="http://sandomingo.github.io/blog/2014/05/29/32bit-or-64bit/"/>
+    <updated>2014-05-29T23:31:49+08:00</updated>
+    <id>http://sandomingo.github.io/blog/2014/05/29/32bit-or-64bit</id>
+    <content type="html"><![CDATA[<p>CPU支持32位和64位，操作系统kernel分为32位和64位</p>
+
+<h2>概念</h2>
+
+<p>//TODO</p>
+
+<h2>衍生</h2>
+
+<p>早年09年macbook air高配，只有2GB的内存，升级了10.9的Mavericks后，开机便占用了1.5G以上的内存，想再打开其他应用已经成为妄想。
+可以尝试使用32位kernal模式运行操作系统。
+<a href="http://http://support.apple.com/kb/ht3773">reference</a></p>
+]]></content>
+  </entry>
+  
+</feed>

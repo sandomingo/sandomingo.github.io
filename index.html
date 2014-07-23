@@ -9,7 +9,8 @@
   <meta name="author" content="San Domingo">
 
   
-  <meta name="description" content="最近在研究boilerplate这个页面自动抽取方法，结果遇到了Stack Overflow的问题，报错现实问题在org.cyberneko.html.HTMLTagBalancer.endElement这里。这个问题是偶尔出现，而且频率也不高，追踪了几天，也找不到问题究竟出在哪里。周末有空了， &hellip;">
+  <meta name="description" content="学艺不精，需要闭门造车几个月。。。
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +66,339 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/07/23/keep-going/">Keep Going</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-23T20:52:40+08:00" pubdate data-updated="true">Jul 23<span>rd</span>, 2014</time>
+        
+         
+          | <a href="/blog/2014/07/23/keep-going/#comments">Comments</a>
+         
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>学艺不精，需要闭门造车几个月。。。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/07/14/classpath-and-sourcepath/">Classpath and Sourcepath</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-14T13:43:37+08:00" pubdate data-updated="true">Jul 14<span>th</span>, 2014</time>
+        
+         
+          | <a href="/blog/2014/07/14/classpath-and-sourcepath/#comments">Comments</a>
+         
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>java options</h2>
+
+<h3>-classpath classpath</h3>
+
+<p>Set the user class path, overriding the user class path in the CLASSPATH environment variable. If neither CLASSPATH or -classpath is specified, the user class path consists of the current directory.</p>
+
+<p>If the -sourcepath option is not specified, the user class path is searched for source files as well as class files.</p>
+
+<h3>-sourcepath sourcepath</h3>
+
+<p>Specify the source code path to search for class or interface definitions. As with the user class path, source path entries are separated by semicolons (;) and can be directories, JAR archives, or ZIP archives. If packages are used, the local path name within the directory or archive must reflect the package name.</p>
+
+<p>Note that classes found through the classpath are subject to automatic recompilation if their sources are found.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/07/09/i-am-new-to-maven/">I Am New to Maven</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-09T22:32:05+08:00" pubdate data-updated="true">Jul 9<span>th</span>, 2014</time>
+        
+         
+          | <a href="/blog/2014/07/09/i-am-new-to-maven/#comments">Comments</a>
+         
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>Maven简介</h2>
+
+<h2>Maven生命周期</h2>
+
+<h2>Maven插件</h2>
+
+<h4>Maven copy resources</h4>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/06/12/maven-dependency-mediation/">Maven Dependency Mediation</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-12T16:43:39+08:00" pubdate data-updated="true">Jun 12<span>th</span>, 2014</time>
+        
+         
+          | <a href="/blog/2014/06/12/maven-dependency-mediation/#comments">Comments</a>
+         
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>Maven的依赖调解</h1>
+
+<p>之前自己一直以为maven会选择最新版本的依赖，其实不然，完完全全的错误哇！</p>
+
+<p>其实Maven进行依赖解析时，遵循以下逻辑:</p>
+
+<ul>
+<li><p>路径最短优先：根据依赖传递长度，选择拥有最短长度的依赖。</p></li>
+<li><p>如果依然存在冲突，则遵循最先声明优先，在pom.xml文件中按从上到下的顺序选择依赖。</p></li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/05/29/32bit-or-64bit/">32bit or 64bit</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-29T23:31:49+08:00" pubdate data-updated="true">May 29<span>th</span>, 2014</time>
+        
+         
+          | <a href="/blog/2014/05/29/32bit-or-64bit/#comments">Comments</a>
+         
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>CPU支持32位和64位，操作系统kernel分为32位和64位</p>
+
+<h2>概念</h2>
+
+<p>//TODO</p>
+
+<h2>衍生</h2>
+
+<p>早年09年macbook air高配，只有2GB的内存，升级了10.9的Mavericks后，开机便占用了1.5G以上的内存，想再打开其他应用已经成为妄想。
+可以尝试使用32位kernal模式运行操作系统。
+<a href="http://http://support.apple.com/kb/ht3773">reference</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/05/25/i-am-new-to-zsh/">Zsh新手指南</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-25T16:34:55+08:00" pubdate data-updated="true">May 25<span>th</span>, 2014</time>
+        
+         
+          | <a href="/blog/2014/05/25/i-am-new-to-zsh/#comments">Comments</a>
+         
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>使用技巧</h2>
+
+<ul>
+<li>zsh向下兼容bash</li>
+<li>更好的历史记录功能：输入部分命令后按上下方向键即可以在向前或者向后查找以此为前缀的历史命令</li>
+<li>强大的自动补全：输入一个命令后，之后的命令、参数不知道怎么输入时，可以无脑按tab，一般均会有提示
+
+<ul>
+<li>输入 <code>kill</code>，然后<code>tab</code>，会列出当前会话中的所有进程</li>
+<li>输入 <code>ssh</code>，然后<code>tab</code>，会出现历史连接的host记录</li>
+</ul>
+</li>
+<li>输入<code>d</code>，可以现实当前会话中访问的目录列表，再输入对应目录的编号即可以跳转到对应目录下</li>
+<li>几乎可以省略写<code>cd</code>命令</li>
+</ul>
+
+
+<h2>推荐插件</h2>
+
+<ul>
+<li>autojump</li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/05/24/i-am-new-to-sqlite-python/">I Am New to Sqlite Python</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-24T00:17:20+08:00" pubdate data-updated="true">May 24<span>th</span>, 2014</time>
+        
+         
+          | <a href="/blog/2014/05/24/i-am-new-to-sqlite-python/#comments">Comments</a>
+         
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>SQLite简介</h2>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -268,6 +602,32 @@
 <li><code>(current-path)$ open .</code>  在终端中打开Finder并定位到current-path(pwd所对应路径)</li>
 </ul>
 
+
+<h3>其他按键</h3>
+
+<p>基于方向键的组合按键也可以产生很多实用的功能</p>
+
+<ul>
+<li><code>fn</code> + <code>up</code> = scroll up</li>
+<li><code>fn</code>+ <code>down</code> = scroll down</li>
+<li><code>fn</code> + <code>shift</code> + <code>up</code> = page up</li>
+<li><code>fn</code>+ <code>shift</code> + <code>down</code> = page down</li>
+<li><code>fn</code> + <code>left</code> = top</li>
+<li><code>fn</code> + <code>right</code> = bottom</li>
+<li><code>opt</code> + <code>left</code>/<code>right</code> = 输入光标按词移动</li>
+<li><code>cmd</code> + <code>left</code> = 输入光标移动到行首</li>
+<li><code>cmd</code> + <code>right</code> = 输入光标移动到行尾</li>
+</ul>
+
+
+<h1>常用软件</h1>
+
+<ul>
+<li>看视频 MPlayerX</li>
+<li>听音乐 iTunes， XLD</li>
+<li></li>
+</ul>
+
 </div>
   
   
@@ -374,506 +734,9 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/04/16/re-enable-key-repeat-in-os-x-mavericks/">Re-enable Key Repeat in OS X Mavericks</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-04-16T16:06:20+08:00" pubdate data-updated="true">Apr 16<span>th</span>, 2014</time>
-        
-         
-          | <a href="/blog/2014/04/16/re-enable-key-repeat-in-os-x-mavericks/#comments">Comments</a>
-         
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>今天在安装idealVim的时候，提示我是否需要Enable key repeat，没有过脑子就点了No，结果在vim操作时就有些小崩溃了。长按<code>hjkl</code>时没有办法连续移动。因此还是想办法重新Enable key repeat吧。</p>
-
-<p>在命令行中执行以下命令</p>
-
-<pre><code>$ defaults write -g ApplePressAndHoldEnabled -bool false
-</code></pre>
-
-<p>重启，搞定。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/04/16/macbookpro-external-display-resolution-problem/">Macbook Pro外接显示器分辨率问题</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-04-16T15:51:50+08:00" pubdate data-updated="true">Apr 16<span>th</span>, 2014</time>
-        
-         
-          | <a href="/blog/2014/04/16/macbookpro-external-display-resolution-problem/#comments">Comments</a>
-         
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>今天被坑惨了TAT，重新安装了Mavericks后，使用thunderbolt转VGA外接显示器时遇到了分辨率的问题：外接显示器支持1080P的分辨率，但在OS X的Display设置中只能选择最高1280*1024的分辨率。google了许久，尝试了重启、合上盖外接显示器重启，重置NVRM都没有效果。最后在<a href="http://chris.dziemborowicz.com/blog/2012/07/04/fix-external-monitor-resolution-on-macbook-pro-with-retina-display/">这里</a>发现了问题的解决方案。</p>
-
-<p>具体做法很是简单：
-打开Displays窗口，默认的分辨率中没有我们需要的1080P
-<img src="/images/os_x_displays/origin.png">
-在外接显示器的分辨率设置中按住键盘上的<code>Option</code>键，再点击 <strong>Scaled</strong> 选项,此时会发现分辨率选项多了很多选择，问题迎刃而解。
-<img src="/images/os_x_displays/clickWithOption.png"></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/04/10/my-vim-cheatsheet/">Vim 学习笔记(持续更新中)</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-04-10T13:35:29+08:00" pubdate data-updated="true">Apr 10<span>th</span>, 2014</time>
-        
-         
-          | <a href="/blog/2014/04/10/my-vim-cheatsheet/#comments">Comments</a>
-         
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>vim的操作操作是基于模式的，常见的模式包括</p>
-
-<ul>
-<li>插入模式 (INSERT)</li>
-<li>编辑模式 (NORMAL)</li>
-<li>可视模式 (VISUAL)</li>
-<li>命令行模式 (:)</li>
-</ul>
-
-
-<p>Normal 模式是是最常用的模式，在normal模式下可以通过按键命令进入其他模式，在其他模式下，通过<code>Esc</code>可以回到Normal模式。</p>
-
-<h1>操作</h1>
-
-<h2>编辑模式(Normal)下的操作</h2>
-
-<p>在其他模式下按<code>Esc</code>进入<strong>Normal模式</strong></p>
-
-<blockquote><p>命令</p>
-
-<ul>
-<li>hjkl &ndash;> 光标移动，对应为←↓↑→。</li>
-<li>0 &ndash;> 光标移动到行头</li>
-<li>^ &ndash;> 光标移动到本行第一个非空字符的位置</li>
-<li>$ &ndash;> 光标移动到本行行末</li>
-<li>g_ &ndash;> 光标移动到本行最后一个非空字符的位置></li>
-<li>f&lt;a-char> &ndash;> 在当前行内，光标移动到下一个&lt;a-char>字符所在位置</li>
-<li>F&lt;a-char> &ndash;> 同f&lt;a-char>，但为反方向的移动</li>
-<li>&lt;a-num>f&lt;a-char> &ndash;> 在当前行内，光标移动到第&lt;a-num>个&lt;a-char>字符所在位置</li>
-<li>t&lt;a-char> &ndash;> 在当前行内，光标移动到第一个&lt;a-char>字符的前一个字符位置</li>
-<li>T&lt;a-char> &ndash;> 同t&lt;a-char>, 但为反方向移动</li>
-<li>&lt;Line-Number>G &ndash;> 光标跳到&lt;Line-Number>指定的行</li>
-<li>gg &ndash;> 到第一行</li>
-<li>G &ndash;> 到最后一行</li>
-<li>w &ndash;> 光标移动到下一个单词(word)的开头</li>
-<li>b &ndash;> 光标移动到上一个单词(word)的开头</li>
-<li>e &ndash;> 光标移动到下一个单词的末尾(end)</li>
-<li>ge &ndash;> 光标移动到上一个单词的末尾(end)</li>
-<li>% &ndash;> 在当前行将光标移动到括号所在位置，多次按％可以在多个多个括号之间切换</li>
-<li>* &ndash;> 将光标移动到当前匹配当前光标所在词的下一个</li>
-<li># &ndash;> 将光标移动到当前匹配当前光标所在词的上一个</li>
-<li>u &ndash;> 撤销上一次操作(undo)</li>
-<li>&lt;C-r> &ndash;> 恢复上一次操作(redo)</li>
-<li>/&lt;a-pattern> &ndash;> 搜索匹配&lt;a-pattern>的字符，按n可以跳到下一个匹配项</li>
-<li>x &ndash;> 删除当前字符</li>
-<li>dd &ndash;> 删除当前行，并保存到剪贴板</li>
-<li>d&lt;a-char> &ndash;> 在当前行内，删除光标位置到&lt;a-char>之前的字符</li>
-<li>p &ndash;> 粘贴</li>
-<li>a &ndash;> 在光标后插入(append)，并进入插入模式</li>
-<li>A &ndash;> 在行末插入，并进入插入模式</li>
-<li>o &ndash;> 在当前行前插入，并进入插入模式</li>
-<li>O &ndash;> 在当前行后插入，并进入插入模式</li>
-<li>cw &ndash;> 替换从光标所在位置到一个单词结尾的字符(change word)，并进入插入模式</li>
-<li>ZZ &ndash;> 保存并退出</li>
-<li>. &ndash;> 小数点，重复上一个命令</li>
-<li>&lt;a-num>&lt;a-command> &ndash;> 重复执行&lt;a-num>次&lt;a-command>命令</li>
-<li>gUU &ndash;> 将当前行的字符串变大写</li>
-<li>guu &ndash;> 将当前行的字符串变小写</li>
-<li>yy &ndash;> 拷贝当前行</li>
-<li>ye &ndash;> 拷贝光标所在位置到本单词最后一个字符的字符串</li>
-<li>>> &ndash;> 当前行向右缩减</li>
-<li>&lt;&lt; &ndash;> 当前行向左缩进</li>
-<li>== &ndash;> 自动缩减</li>
-<li>J => 删除当前行的换行符，即将下一行与当前行连接起来</li>
-</ul>
-</blockquote>
-
-<h2>插入模式下的操作</h2>
-
-<p>在Normal模式中输入<code>i</code>进入<strong>插入模式</strong></p>
-
-<blockquote><p>命令</p>
-
-<ul>
-<li>&lt;C-n> &ndash;> 自动补全，next</li>
-<li>&lt;C-p> &ndash;> 自动补全，previous</li>
-</ul>
-</blockquote>
-
-<h2>可视模式下的操作</h2>
-
-<p>在Normal模式中输入<code>v</code>进入<strong>可视模式</strong></p>
-
-<blockquote><p>命令</p>
-
-<ul>
-<li>hjkl &ndash;> 或使用←↓↑→来创建选区</li>
-<li>i&lt;an-object> &ndash;> 区域选择，不包括&lt;an-object>的区域，&lt;an-object>可以为一个字符，或者一个单词</li>
-<li>a&lt;an-object> &ndash;> 区域选择，包括&lt;an-object>的区域</li>
-</ul>
-</blockquote>
-
-<h2>命令行模式下的操作</h2>
-
-<p>在Normal模式中输入<code>:</code>进入<strong>命令行模式</strong></p>
-
-<blockquote><p>命令</p>
-
-<ul>
-<li>wq &ndash;> 保存并退出</li>
-<li>x &ndash;> 保存并退出</li>
-<li>w &ndash;> 保存，可以加文件名w filename</li>
-<li>q &ndash;> 退出</li>
-<li>q! &ndash;> 不保存退出</li>
-<li>e <path2file> &ndash;> 打开一个文件</li>
-<li>saveas <path2file> &ndash;> 另存为</li>
-<li>n &ndash;> 切换到下一个文件</li>
-<li>&lt;Line-Number> &ndash;> 光标跳转到&lt;Line-Number>指定行</li>
-<li>%s/foo/bar/g &ndash;> 在全局(globle)替换foo为bar</li>
-<li>%s/foo/bar/gcI &ndash;> 在全局(globle)替换foo为bar，需要确认(commit)，并且忽略(Ignore)大小写</li>
-<li>s/foo/bar/g &ndash;> 在光标当前所在行全局(globle)替换foo为bar</li>
-</ul>
-</blockquote>
-
-<h2>其他技巧</h2>
-
-<blockquote><p>块操作</p>
-
-<ol>
-<li>&lt;C-v> &ndash;> 开始块操作</li>
-<li>&lt;C-n> &ndash;> 向下选择块，(也可以使用其他方式来选择)</li>
-<li>&lt;any-command><code>ESC</code> &ndash;> 执行command，<code>ESC</code>键使得操作对区块的每一行生效</li>
-</ol>
-</blockquote>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/04/06/geek-alphabet/">Geek Alphabet</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-04-06T21:04:48+08:00" pubdate data-updated="true">Apr 6<span>th</span>, 2014</time>
-        
-         
-          | <a href="/blog/2014/04/06/geek-alphabet/#comments">Comments</a>
-         
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><table>
-<thead>
-<tr>
-<th align="left">Letter </th>
-<th align="center"> Name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">Α α    </td>
-<td align="center"> alpha</td>
-</tr>
-<tr>
-<td align="left">Β β    </td>
-<td align="center"> beta</td>
-</tr>
-<tr>
-<td align="left">Γ γ    </td>
-<td align="center"> gamma</td>
-</tr>
-<tr>
-<td align="left">Δ δ    </td>
-<td align="center"> delta</td>
-</tr>
-<tr>
-<td align="left">Ε ε    </td>
-<td align="center"> epsilon</td>
-</tr>
-<tr>
-<td align="left">Ζ ζ    </td>
-<td align="center"> zeta</td>
-</tr>
-<tr>
-<td align="left">Η η    </td>
-<td align="center"> eta</td>
-</tr>
-<tr>
-<td align="left">Θ θ    </td>
-<td align="center"> theta</td>
-</tr>
-<tr>
-<td align="left">Ι ι    </td>
-<td align="center"> iota</td>
-</tr>
-<tr>
-<td align="left">Κ κ    </td>
-<td align="center"> kappa</td>
-</tr>
-<tr>
-<td align="left">Λ λ    </td>
-<td align="center"> lambda</td>
-</tr>
-<tr>
-<td align="left">Μ μ    </td>
-<td align="center"> mu</td>
-</tr>
-<tr>
-<td align="left">Ν ν    </td>
-<td align="center"> nu</td>
-</tr>
-<tr>
-<td align="left">Ξ ξ    </td>
-<td align="center"> xi</td>
-</tr>
-<tr>
-<td align="left">Ο ο    </td>
-<td align="center"> omicron</td>
-</tr>
-<tr>
-<td align="left">Π π    </td>
-<td align="center"> pi</td>
-</tr>
-<tr>
-<td align="left">Ρ ρ    </td>
-<td align="center"> rho</td>
-</tr>
-<tr>
-<td align="left">Σ σ    </td>
-<td align="center"> sigma</td>
-</tr>
-<tr>
-<td align="left">Τ τ    </td>
-<td align="center"> tau</td>
-</tr>
-<tr>
-<td align="left">Υ υ    </td>
-<td align="center"> upsilon</td>
-</tr>
-<tr>
-<td align="left">Φ φ    </td>
-<td align="center"> phi</td>
-</tr>
-<tr>
-<td align="left">Χ χ    </td>
-<td align="center"> chi</td>
-</tr>
-<tr>
-<td align="left">Ψ ψ    </td>
-<td align="center"> psi</td>
-</tr>
-<tr>
-<td align="left">Ω ω    </td>
-<td align="center"> omega</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/04/06/linux-history-shortcut/">Linux历史命令快捷操作</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-04-06T20:47:35+08:00" pubdate data-updated="true">Apr 6<span>th</span>, 2014</time>
-        
-         
-          | <a href="/blog/2014/04/06/linux-history-shortcut/#comments">Comments</a>
-         
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><ul>
-<li><p> 查看历史命令：</p>
-
-<ul>
-<li>$ history</li>
-<li>$ history 100  #最近100条历史记录</li>
-</ul>
-</li>
-<li><p> 快速执行历史记录：</p>
-
-<ul>
-<li>方法1: Ctrl+r(reverse intelligent search交互式搜索)，根据输出显示最近输入的命令，再按Ctrl + r会将匹配结果循环展示(Ctrl+g退出)</li>
-<li><p>方法2:使用!</p>
-
-<ul>
-<li>$ !!  #执行最近一条命令</li>
-<li>$ !5  #执行history中编号为5的命令</li>
-<li>$ !字符串 #执行命令中最近一条与字符串匹配的命令</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/04/05/my-init/">开始，第一篇</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-04-05T02:32:28+08:00" pubdate data-updated="true">Apr 5<span>th</span>, 2014</time>
-        
-         
-          | <a href="/blog/2014/04/05/my-init/#comments">Comments</a>
-         
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>就这么愉快的开始吧！</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
+    
+      <a class="prev" href="/blog/page/2/">&larr; Older</a>
     
     <a href="/blog/archives">Blog Archives</a>
     
@@ -886,23 +749,23 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2014/04/26/duplicate-class-in-different-jar/">[Java]不同Jar包中出现同名class引起的程序Bug</a>
+        <a href="/blog/2014/07/23/keep-going/">Keep Going</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2014/04/25/i-am-new-to-mac/">Mac新手指南(编写中)</a>
+        <a href="/blog/2014/07/14/classpath-and-sourcepath/">Classpath and Sourcepath</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2014/04/18/replace-macbook-pros-hdd-with-an-ssd/">给MacBook Pro换SSD</a>
+        <a href="/blog/2014/07/09/i-am-new-to-maven/">I Am New to Maven</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2014/04/16/re-enable-key-repeat-in-os-x-mavericks/">Re-enable Key Repeat in OS X Mavericks</a>
+        <a href="/blog/2014/06/12/maven-dependency-mediation/">Maven Dependency Mediation</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2014/04/16/macbookpro-external-display-resolution-problem/">Macbook Pro外接显示器分辨率问题</a>
+        <a href="/blog/2014/05/29/32bit-or-64bit/">32bit or 64bit</a>
       </li>
     
   </ul>

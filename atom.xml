@@ -4,7 +4,7 @@
   <title><![CDATA[San Domingo's Blog]]></title>
   <link href="http://sandomingo.github.io/atom.xml" rel="self"/>
   <link href="http://sandomingo.github.io/"/>
-  <updated>2014-04-29T14:59:20+08:00</updated>
+  <updated>2014-07-23T21:05:25+08:00</updated>
   <id>http://sandomingo.github.io/</id>
   <author>
     <name><![CDATA[San Domingo]]></name>
@@ -12,6 +12,129 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Keep Going]]></title>
+    <link href="http://sandomingo.github.io/blog/2014/07/23/keep-going/"/>
+    <updated>2014-07-23T20:52:40+08:00</updated>
+    <id>http://sandomingo.github.io/blog/2014/07/23/keep-going</id>
+    <content type="html"><![CDATA[<p>学艺不精，需要闭门造车几个月。。。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Classpath and Sourcepath]]></title>
+    <link href="http://sandomingo.github.io/blog/2014/07/14/classpath-and-sourcepath/"/>
+    <updated>2014-07-14T13:43:37+08:00</updated>
+    <id>http://sandomingo.github.io/blog/2014/07/14/classpath-and-sourcepath</id>
+    <content type="html"><![CDATA[<h2>java options</h2>
+
+<h3>-classpath classpath</h3>
+
+<p>Set the user class path, overriding the user class path in the CLASSPATH environment variable. If neither CLASSPATH or -classpath is specified, the user class path consists of the current directory.</p>
+
+<p>If the -sourcepath option is not specified, the user class path is searched for source files as well as class files.</p>
+
+<h3>-sourcepath sourcepath</h3>
+
+<p>Specify the source code path to search for class or interface definitions. As with the user class path, source path entries are separated by semicolons (;) and can be directories, JAR archives, or ZIP archives. If packages are used, the local path name within the directory or archive must reflect the package name.</p>
+
+<p>Note that classes found through the classpath are subject to automatic recompilation if their sources are found.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[I Am New to Maven]]></title>
+    <link href="http://sandomingo.github.io/blog/2014/07/09/i-am-new-to-maven/"/>
+    <updated>2014-07-09T22:32:05+08:00</updated>
+    <id>http://sandomingo.github.io/blog/2014/07/09/i-am-new-to-maven</id>
+    <content type="html"><![CDATA[<h2>Maven简介</h2>
+
+<h2>Maven生命周期</h2>
+
+<h2>Maven插件</h2>
+
+<h4>Maven copy resources</h4>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Maven Dependency Mediation]]></title>
+    <link href="http://sandomingo.github.io/blog/2014/06/12/maven-dependency-mediation/"/>
+    <updated>2014-06-12T16:43:39+08:00</updated>
+    <id>http://sandomingo.github.io/blog/2014/06/12/maven-dependency-mediation</id>
+    <content type="html"><![CDATA[<h1>Maven的依赖调解</h1>
+
+<p>之前自己一直以为maven会选择最新版本的依赖，其实不然，完完全全的错误哇！</p>
+
+<p>其实Maven进行依赖解析时，遵循以下逻辑:</p>
+
+<ul>
+<li><p>路径最短优先：根据依赖传递长度，选择拥有最短长度的依赖。</p></li>
+<li><p>如果依然存在冲突，则遵循最先声明优先，在pom.xml文件中按从上到下的顺序选择依赖。</p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[32bit or 64bit]]></title>
+    <link href="http://sandomingo.github.io/blog/2014/05/29/32bit-or-64bit/"/>
+    <updated>2014-05-29T23:31:49+08:00</updated>
+    <id>http://sandomingo.github.io/blog/2014/05/29/32bit-or-64bit</id>
+    <content type="html"><![CDATA[<p>CPU支持32位和64位，操作系统kernel分为32位和64位</p>
+
+<h2>概念</h2>
+
+<p>//TODO</p>
+
+<h2>衍生</h2>
+
+<p>早年09年macbook air高配，只有2GB的内存，升级了10.9的Mavericks后，开机便占用了1.5G以上的内存，想再打开其他应用已经成为妄想。
+可以尝试使用32位kernal模式运行操作系统。
+<a href="http://http://support.apple.com/kb/ht3773">reference</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Zsh新手指南]]></title>
+    <link href="http://sandomingo.github.io/blog/2014/05/25/i-am-new-to-zsh/"/>
+    <updated>2014-05-25T16:34:55+08:00</updated>
+    <id>http://sandomingo.github.io/blog/2014/05/25/i-am-new-to-zsh</id>
+    <content type="html"><![CDATA[<h2>使用技巧</h2>
+
+<ul>
+<li>zsh向下兼容bash</li>
+<li>更好的历史记录功能：输入部分命令后按上下方向键即可以在向前或者向后查找以此为前缀的历史命令</li>
+<li>强大的自动补全：输入一个命令后，之后的命令、参数不知道怎么输入时，可以无脑按tab，一般均会有提示
+
+<ul>
+<li>输入 <code>kill</code>，然后<code>tab</code>，会列出当前会话中的所有进程</li>
+<li>输入 <code>ssh</code>，然后<code>tab</code>，会出现历史连接的host记录</li>
+</ul>
+</li>
+<li>输入<code>d</code>，可以现实当前会话中访问的目录列表，再输入对应目录的编号即可以跳转到对应目录下</li>
+<li>几乎可以省略写<code>cd</code>命令</li>
+</ul>
+
+
+<h2>推荐插件</h2>
+
+<ul>
+<li>autojump</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[I Am New to Sqlite Python]]></title>
+    <link href="http://sandomingo.github.io/blog/2014/05/24/i-am-new-to-sqlite-python/"/>
+    <updated>2014-05-24T00:17:20+08:00</updated>
+    <id>http://sandomingo.github.io/blog/2014/05/24/i-am-new-to-sqlite-python</id>
+    <content type="html"><![CDATA[<h2>SQLite简介</h2>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[[Java]不同Jar包中出现同名class引起的程序Bug]]></title>
@@ -157,6 +280,32 @@
 
 <ul>
 <li><code>(current-path)$ open .</code>  在终端中打开Finder并定位到current-path(pwd所对应路径)</li>
+</ul>
+
+
+<h3>其他按键</h3>
+
+<p>基于方向键的组合按键也可以产生很多实用的功能</p>
+
+<ul>
+<li><code>fn</code> + <code>up</code> = scroll up</li>
+<li><code>fn</code>+ <code>down</code> = scroll down</li>
+<li><code>fn</code> + <code>shift</code> + <code>up</code> = page up</li>
+<li><code>fn</code>+ <code>shift</code> + <code>down</code> = page down</li>
+<li><code>fn</code> + <code>left</code> = top</li>
+<li><code>fn</code> + <code>right</code> = bottom</li>
+<li><code>opt</code> + <code>left</code>/<code>right</code> = 输入光标按词移动</li>
+<li><code>cmd</code> + <code>left</code> = 输入光标移动到行首</li>
+<li><code>cmd</code> + <code>right</code> = 输入光标移动到行尾</li>
+</ul>
+
+
+<h1>常用软件</h1>
+
+<ul>
+<li>看视频 MPlayerX</li>
+<li>听音乐 iTunes， XLD</li>
+<li></li>
 </ul>
 
 ]]></content>

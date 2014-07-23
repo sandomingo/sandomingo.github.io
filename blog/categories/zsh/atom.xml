@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Zsh | San Domingo's Blog]]></title>
+  <link href="http://sandomingo.github.io/blog/categories/zsh/atom.xml" rel="self"/>
+  <link href="http://sandomingo.github.io/"/>
+  <updated>2014-07-23T21:05:25+08:00</updated>
+  <id>http://sandomingo.github.io/</id>
+  <author>
+    <name><![CDATA[San Domingo]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Zsh新手指南]]></title>
+    <link href="http://sandomingo.github.io/blog/2014/05/25/i-am-new-to-zsh/"/>
+    <updated>2014-05-25T16:34:55+08:00</updated>
+    <id>http://sandomingo.github.io/blog/2014/05/25/i-am-new-to-zsh</id>
+    <content type="html"><![CDATA[<h2>使用技巧</h2>
+
+<ul>
+<li>zsh向下兼容bash</li>
+<li>更好的历史记录功能：输入部分命令后按上下方向键即可以在向前或者向后查找以此为前缀的历史命令</li>
+<li>强大的自动补全：输入一个命令后，之后的命令、参数不知道怎么输入时，可以无脑按tab，一般均会有提示
+
+<ul>
+<li>输入 <code>kill</code>，然后<code>tab</code>，会列出当前会话中的所有进程</li>
+<li>输入 <code>ssh</code>，然后<code>tab</code>，会出现历史连接的host记录</li>
+</ul>
+</li>
+<li>输入<code>d</code>，可以现实当前会话中访问的目录列表，再输入对应目录的编号即可以跳转到对应目录下</li>
+<li>几乎可以省略写<code>cd</code>命令</li>
+</ul>
+
+
+<h2>推荐插件</h2>
+
+<ul>
+<li>autojump</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

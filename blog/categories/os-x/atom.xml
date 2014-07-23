@@ -4,7 +4,7 @@
   <title><![CDATA[Category: OS X | San Domingo's Blog]]></title>
   <link href="http://sandomingo.github.io/blog/categories/os-x/atom.xml" rel="self"/>
   <link href="http://sandomingo.github.io/"/>
-  <updated>2014-04-29T14:59:20+08:00</updated>
+  <updated>2014-07-23T21:05:25+08:00</updated>
   <id>http://sandomingo.github.io/</id>
   <author>
     <name><![CDATA[San Domingo]]></name>
@@ -122,6 +122,32 @@
 
 <ul>
 <li><code>(current-path)$ open .</code>  在终端中打开Finder并定位到current-path(pwd所对应路径)</li>
+</ul>
+
+
+<h3>其他按键</h3>
+
+<p>基于方向键的组合按键也可以产生很多实用的功能</p>
+
+<ul>
+<li><code>fn</code> + <code>up</code> = scroll up</li>
+<li><code>fn</code>+ <code>down</code> = scroll down</li>
+<li><code>fn</code> + <code>shift</code> + <code>up</code> = page up</li>
+<li><code>fn</code>+ <code>shift</code> + <code>down</code> = page down</li>
+<li><code>fn</code> + <code>left</code> = top</li>
+<li><code>fn</code> + <code>right</code> = bottom</li>
+<li><code>opt</code> + <code>left</code>/<code>right</code> = 输入光标按词移动</li>
+<li><code>cmd</code> + <code>left</code> = 输入光标移动到行首</li>
+<li><code>cmd</code> + <code>right</code> = 输入光标移动到行尾</li>
+</ul>
+
+
+<h1>常用软件</h1>
+
+<ul>
+<li>看视频 MPlayerX</li>
+<li>听音乐 iTunes， XLD</li>
+<li></li>
 </ul>
 
 ]]></content>
