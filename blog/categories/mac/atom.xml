@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Mac | San Domingo's Blog]]></title>
   <link href="http://sandomingo.github.io/blog/categories/mac/atom.xml" rel="self"/>
   <link href="http://sandomingo.github.io/"/>
-  <updated>2014-07-23T21:05:25+08:00</updated>
+  <updated>2014-08-13T21:38:44+08:00</updated>
   <id>http://sandomingo.github.io/</id>
   <author>
     <name><![CDATA[San Domingo]]></name>
@@ -20,7 +20,7 @@
     <id>http://sandomingo.github.io/blog/2014/04/25/i-am-new-to-mac</id>
     <content type="html"><![CDATA[<p>最近好友aKai终于从Linux阵营倒戈到了OS X，作为一名酷爱DIY的用户，他甚是不习惯OS X的各种操作，问了很多让Mac用户很是意外的简单问题。于是，想想还是在这里记录一下，为了日后有新的小伙伴倒戈来OS X留下入门可读的第一手资料。（本文是基于OS X 10.9.2 Mavericks）</p>
 
-<p><code>本着易学易会的原则，尽可能将缩写、快捷键的完整英文表示写出来，OS X的很多操作都是很直觉式的操作，掌握了其根本思想后，日后自然便驾轻就熟了。</code></p>
+<p><code>本着易学易会的原则，尽可能将缩写、快捷键的完整英文表示写出来，OS X的很多操作都是很直觉式的操作，掌握了其根本思想后，日后自然便驾轻就熟了。因为个人有刨根问底的习惯，所以有引用的地方都尽可能的会给出原始url，例如软件方面，除了App Store，其余的尽量都给出官方下载地址。</code></p>
 
 <p><em>一些简写：Win->Windows系统， app->application</em></p>
 
@@ -104,9 +104,12 @@
 </ul>
 
 
-<h3>日常编辑</h3>
+<h3>日常操作</h3>
 
 <ul>
+<li>在launchpad中按住<code>opt</code>键，可以删除软件(也可以直接去Applications文件夹中删除)
+
+<h3>日常编辑</h3></li>
 <li><code>cmd</code> + <code>c</code> 复制</li>
 <li><code>cmd</code> + <code>v</code> 粘贴</li>
 <li><code>cmd</code> + <code>opt</code> + <code>v</code> 移动(剪切操作对应为：先复制，再移动)</li>
@@ -145,9 +148,26 @@
 <h1>常用软件</h1>
 
 <ul>
-<li>看视频 MPlayerX</li>
-<li>听音乐 iTunes， XLD</li>
-<li></li>
+<li><a href="http://mplayerx.org/download.html">MPlayerX</a>: 视频播放器，支持很多格式</li>
+<li>iTunes (系统自带) 听音乐，Podcast</li>
+<li><a href="http://www.macupdate.com/app/mac/23430/x-lossless-decoder">XLD</a>: 无损音频解码器，支持无损格式的音乐播放</li>
+<li><a href="http://www.obdev.at/products/launchbar/download.html">LaunchBar</a>: 桌面启动器，比spotlight更好用（升Yosemite后估计就不太用得着了）的借助索引的启动器，剪贴板功能很实用，而且可以免费实用(Alfred好贵..TAT)</li>
+</ul>
+
+
+<h1>开发者常用工具</h1>
+
+<p>如果你是一名程序开发者，以下工具还是建议安装的，至少让我个人觉得很是方便。</p>
+
+<ul>
+<li><p><a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a>: 更好用的终端zsh
+  安装命令： 在终端下执行 <code>curl -L http://install.ohmyz.sh | sh</code></p></li>
+<li><p><a href="http://brew.sh">brew</a>: mac下的软件包管理工具
+  安装命令：在终端下执行 <code>ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"</code></p></li>
+<li><p><a href="http://iterm2.com/downloads.html">iTerm2</a>: 更好用的终端，其中的分屏功能很实用。</p></li>
+<li><a href="http://www.sublimetext.com/2">Sublime Text2</a>: 轻便的文本编辑器</li>
+<li><a href="http://mouapp.com/">Mou</a>: Markdown编辑器</li>
+<li>Wunderlist(App Store): Go-To-Do软件，跨平台，免费</li>
 </ul>
 
 ]]></content>

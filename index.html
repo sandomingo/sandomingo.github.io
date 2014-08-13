@@ -9,7 +9,7 @@
   <meta name="author" content="San Domingo">
 
   
-  <meta name="description" content="学艺不精，需要闭门造车几个月。。。
+  <meta name="description" content="
 ">
   
 
@@ -66,6 +66,45 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/07/28/class-not-found-exception-and-error/">Class Not Found Exception and Error</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-28T15:43:06+08:00" pubdate data-updated="true">Jul 28<span>th</span>, 2014</time>
+        
+         
+          | <a href="/blog/2014/07/28/class-not-found-exception-and-error/#comments">Comments</a>
+         
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -498,7 +537,7 @@
 
   <div class="entry-content"><p>最近好友aKai终于从Linux阵营倒戈到了OS X，作为一名酷爱DIY的用户，他甚是不习惯OS X的各种操作，问了很多让Mac用户很是意外的简单问题。于是，想想还是在这里记录一下，为了日后有新的小伙伴倒戈来OS X留下入门可读的第一手资料。（本文是基于OS X 10.9.2 Mavericks）</p>
 
-<p><code>本着易学易会的原则，尽可能将缩写、快捷键的完整英文表示写出来，OS X的很多操作都是很直觉式的操作，掌握了其根本思想后，日后自然便驾轻就熟了。</code></p>
+<p><code>本着易学易会的原则，尽可能将缩写、快捷键的完整英文表示写出来，OS X的很多操作都是很直觉式的操作，掌握了其根本思想后，日后自然便驾轻就熟了。因为个人有刨根问底的习惯，所以有引用的地方都尽可能的会给出原始url，例如软件方面，除了App Store，其余的尽量都给出官方下载地址。</code></p>
 
 <p><em>一些简写：Win->Windows系统， app->application</em></p>
 
@@ -582,9 +621,12 @@
 </ul>
 
 
-<h3>日常编辑</h3>
+<h3>日常操作</h3>
 
 <ul>
+<li>在launchpad中按住<code>opt</code>键，可以删除软件(也可以直接去Applications文件夹中删除)
+
+<h3>日常编辑</h3></li>
 <li><code>cmd</code> + <code>c</code> 复制</li>
 <li><code>cmd</code> + <code>v</code> 粘贴</li>
 <li><code>cmd</code> + <code>opt</code> + <code>v</code> 移动(剪切操作对应为：先复制，再移动)</li>
@@ -623,110 +665,28 @@
 <h1>常用软件</h1>
 
 <ul>
-<li>看视频 MPlayerX</li>
-<li>听音乐 iTunes， XLD</li>
-<li></li>
+<li><a href="http://mplayerx.org/download.html">MPlayerX</a>: 视频播放器，支持很多格式</li>
+<li>iTunes (系统自带) 听音乐，Podcast</li>
+<li><a href="http://www.macupdate.com/app/mac/23430/x-lossless-decoder">XLD</a>: 无损音频解码器，支持无损格式的音乐播放</li>
+<li><a href="http://www.obdev.at/products/launchbar/download.html">LaunchBar</a>: 桌面启动器，比spotlight更好用（升Yosemite后估计就不太用得着了）的借助索引的启动器，剪贴板功能很实用，而且可以免费实用(Alfred好贵..TAT)</li>
 </ul>
 
-</div>
-  
-  
 
+<h1>开发者常用工具</h1>
 
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/04/18/replace-macbook-pros-hdd-with-an-ssd/">给MacBook Pro换SSD</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-04-18T13:09:06+08:00" pubdate data-updated="true">Apr 18<span>th</span>, 2014</time>
-        
-         
-          | <a href="/blog/2014/04/18/replace-macbook-pros-hdd-with-an-ssd/#comments">Comments</a>
-         
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>最近越来越感觉到HDD拖慢了自己工作的效率，尤其是从深度睡眠状态恢复时，更是慢到令人无法忍受，思来想去，也是时候体验一下SSD的速度了，那么就动手吧。</p>
-
-<h3>准备工作</h3>
-
-<p>SSD一块，PH00(十字)、T6(六角)号螺丝刀、OS X安装盘(这里使用移动硬盘制作了一个bootable的安装器来替代)。
-<img src="/images/install_ssd/tools.JPG"></p>
-
-<p>制作一个Bootable OS X installer(这里制作的是Mavericks的installer)：</p>
-
-<blockquote><ol>
-<li><p>去App Store下载OS X，下载完后不要点安装，可以再/Applications/目录下找到Install OS X Mavericks.app。</p></li>
-<li><p>准备一个有8GB或者以上容量的U盘，或者移动硬盘(我是给移动硬盘创建了一个8GB的分区)，插USB，假设挂载在了/Volumes/OSXInstaller目录下。</p></li>
-<li><p>使用Install OS X Mavericks.app自带的工具来制作启动盘。</p></li>
-<li><p>打开终端，执行命令：
-   <code>$ /Applications/Install\ OS\ X\ Mavericks.app/Contents/Resources/createinstallmedia</code></p></li>
-<li><p>该命令会提示你按一定的格式使用该命令， 应该加上系统安装器的目的路径，如上面假设的/Volumes/OSXInstaller。</p></li>
-<li><p>等待一会儿。</p></li>
-<li><p>Done.</p></li>
-</ol>
-</blockquote>
-
-<h3>更换硬盘</h3>
+<p>如果你是一名程序开发者，以下工具还是建议安装的，至少让我个人觉得很是方便。</p>
 
 <ul>
-<li><p>操作前关机拔电。</p></li>
-<li><p>拆开底部面板(记得保持螺丝有序，稍用心看就会发现中间左右两个短螺丝和其他的几颗短螺丝是不一样的)，可以看到HDD在电池旁边。
-<img src="/images/install_ssd/origin_hdd.JPG"></p></li>
-<li><p>取出原有的HDD仅需取下HDD和光驱之间的两颗螺丝。
-<img src="/images/install_ssd/remove_sidebar.JPG"></p></li>
-<li><p>拔出sata数据线。
-<img src="/images/install_ssd/remove_sata_cable.JPG"></p></li>
-<li><p>将HDD周边的4颗螺丝取下，装在SSD上。
-<img src="/images/install_ssd/set_crews.JPG"></p></li>
-<li><p>装入SSD，并固定好螺丝(这里在SSD正面安装了SanDisk提供的衬垫来帮助固定)。
-<img src="/images/install_ssd/put_ssd2bay.JPG"></p></li>
-<li><p>Done.</p>
-
-<blockquote><p>Tips: 建议底部面板完成系统安装后再上螺丝，避免因意外而引起不必要的麻烦。</p></blockquote></li>
+<li><p><a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a>: 更好用的终端zsh
+  安装命令： 在终端下执行 <code>curl -L http://install.ohmyz.sh | sh</code></p></li>
+<li><p><a href="http://brew.sh">brew</a>: mac下的软件包管理工具
+  安装命令：在终端下执行 <code>ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"</code></p></li>
+<li><p><a href="http://iterm2.com/downloads.html">iTerm2</a>: 更好用的终端，其中的分屏功能很实用。</p></li>
+<li><a href="http://www.sublimetext.com/2">Sublime Text2</a>: 轻便的文本编辑器</li>
+<li><a href="http://mouapp.com/">Mou</a>: Markdown编辑器</li>
+<li>Wunderlist(App Store): Go-To-Do软件，跨平台，免费</li>
 </ul>
 
-
-<h3>安装系统</h3>
-
-<p>因为之前系统被自己折腾的很是糟糕，已经无力回天了，所以<strong>备份好数据</strong>重装系统。
-* 插入bootable OS X installer(这里我用的是一个移动硬盘)，按<code>OPTION</code>键，可以进入启动盘的选择界面。
-<img src="/images/install_ssd/boot2install.JPG"></p>
-
-<ul>
-<li><p>使用Disk Utility给新安装的硬盘分区。这里选择一个分区，选择Mac OS Extended(Journaled)分区格式，点击分区下方的<code>OPTION</code>选项，因为我的是intel-based的Mac，所以选择GUID分区表。点击<code>Apply</code>完成分区。
-<img src="/images/install_ssd/partition.JPG">
-<img src="/images/install_ssd/partition_schema.JPG"></p></li>
-<li><p>关闭Disk Utility, 在菜单中选择安装系统。选择将OS X安装到新的SSD。等待2分钟后，系统自动重启后继续安装，又等待20分钟后，完成安装。
-<img src="/images/install_ssd/install_os_x.JPG"></p></li>
-</ul>
-
-
-<blockquote><p>如果不需要重装系统，可以事先用TimeMachine备份好自己的系统，然后在菜单中选择从TimeMachine中恢复即可。</p></blockquote>
-
-<h3>结束语</h3>
-
-<p>从现在开始，老Mac又可以跑的飞快咯！使用了一周，总的来说，SSD的更换还是非常值得的，极大的降低了个人撑懒腰、喝水、看风景的频率，工作学习从此更加得心应手。</p>
 </div>
   
   
@@ -749,6 +709,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/07/28/class-not-found-exception-and-error/">Class Not Found Exception and Error</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/07/23/keep-going/">Keep Going</a>
       </li>
     
@@ -762,10 +726,6 @@
     
       <li class="post">
         <a href="/blog/2014/06/12/maven-dependency-mediation/">Maven Dependency Mediation</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/05/29/32bit-or-64bit/">32bit or 64bit</a>
       </li>
     
   </ul>
