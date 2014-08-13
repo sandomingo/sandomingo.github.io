@@ -4,7 +4,7 @@
   <title><![CDATA[San Domingo's Blog]]></title>
   <link href="http://sandomingo.github.io/atom.xml" rel="self"/>
   <link href="http://sandomingo.github.io/"/>
-  <updated>2014-08-13T21:38:44+08:00</updated>
+  <updated>2014-08-13T22:12:07+08:00</updated>
   <id>http://sandomingo.github.io/</id>
   <author>
     <name><![CDATA[San Domingo]]></name>
@@ -49,21 +49,6 @@
 <p>Specify the source code path to search for class or interface definitions. As with the user class path, source path entries are separated by semicolons (;) and can be directories, JAR archives, or ZIP archives. If packages are used, the local path name within the directory or archive must reflect the package name.</p>
 
 <p>Note that classes found through the classpath are subject to automatic recompilation if their sources are found.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[I Am New to Maven]]></title>
-    <link href="http://sandomingo.github.io/blog/2014/07/09/i-am-new-to-maven/"/>
-    <updated>2014-07-09T22:32:05+08:00</updated>
-    <id>http://sandomingo.github.io/blog/2014/07/09/i-am-new-to-maven</id>
-    <content type="html"><![CDATA[<h2>Maven简介</h2>
-
-<h2>Maven生命周期</h2>
-
-<h2>Maven插件</h2>
-
-<h4>Maven copy resources</h4>
 ]]></content>
   </entry>
   
@@ -133,15 +118,6 @@
 <li>autojump</li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[I Am New to Sqlite Python]]></title>
-    <link href="http://sandomingo.github.io/blog/2014/05/24/i-am-new-to-sqlite-python/"/>
-    <updated>2014-05-24T00:17:20+08:00</updated>
-    <id>http://sandomingo.github.io/blog/2014/05/24/i-am-new-to-sqlite-python</id>
-    <content type="html"><![CDATA[<h2>SQLite简介</h2>
 ]]></content>
   </entry>
   

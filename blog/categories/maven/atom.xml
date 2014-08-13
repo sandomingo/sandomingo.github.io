@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Maven | San Domingo's Blog]]></title>
   <link href="http://sandomingo.github.io/blog/categories/maven/atom.xml" rel="self"/>
   <link href="http://sandomingo.github.io/"/>
-  <updated>2014-08-13T21:38:44+08:00</updated>
+  <updated>2014-08-13T22:12:07+08:00</updated>
   <id>http://sandomingo.github.io/</id>
   <author>
     <name><![CDATA[San Domingo]]></name>
@@ -12,21 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[I Am New to Maven]]></title>
-    <link href="http://sandomingo.github.io/blog/2014/07/09/i-am-new-to-maven/"/>
-    <updated>2014-07-09T22:32:05+08:00</updated>
-    <id>http://sandomingo.github.io/blog/2014/07/09/i-am-new-to-maven</id>
-    <content type="html"><![CDATA[<h2>Maven简介</h2>
-
-<h2>Maven生命周期</h2>
-
-<h2>Maven插件</h2>
-
-<h4>Maven copy resources</h4>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Maven Dependency Mediation]]></title>

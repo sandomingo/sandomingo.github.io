@@ -201,51 +201,6 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2014/07/09/i-am-new-to-maven/">I Am New to Maven</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-07-09T22:32:05+08:00" pubdate data-updated="true">Jul 9<span>th</span>, 2014</time>
-        
-         
-          | <a href="/blog/2014/07/09/i-am-new-to-maven/#comments">Comments</a>
-         
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>Maven简介</h2>
-
-<h2>Maven生命周期</h2>
-
-<h2>Maven插件</h2>
-
-<h4>Maven copy resources</h4>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
       <h1 class="entry-title"><a href="/blog/2014/06/12/maven-dependency-mediation/">Maven Dependency Mediation</a></h1>
     
     
@@ -393,45 +348,6 @@
 <li>autojump</li>
 </ul>
 
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/05/24/i-am-new-to-sqlite-python/">I Am New to Sqlite Python</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-05-24T00:17:20+08:00" pubdate data-updated="true">May 24<span>th</span>, 2014</time>
-        
-         
-          | <a href="/blog/2014/05/24/i-am-new-to-sqlite-python/#comments">Comments</a>
-         
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>SQLite简介</h2>
 </div>
   
   
@@ -694,6 +610,151 @@
 
     </article>
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/04/18/replace-macbook-pros-hdd-with-an-ssd/">给MacBook Pro换SSD</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-18T13:09:06+08:00" pubdate data-updated="true">Apr 18<span>th</span>, 2014</time>
+        
+         
+          | <a href="/blog/2014/04/18/replace-macbook-pros-hdd-with-an-ssd/#comments">Comments</a>
+         
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>最近越来越感觉到HDD拖慢了自己工作的效率，尤其是从深度睡眠状态恢复时，更是慢到令人无法忍受，思来想去，也是时候体验一下SSD的速度了，那么就动手吧。</p>
+
+<h3>准备工作</h3>
+
+<p>SSD一块，PH00(十字)、T6(六角)号螺丝刀、OS X安装盘(这里使用移动硬盘制作了一个bootable的安装器来替代)。
+<img src="/images/install_ssd/tools.JPG"></p>
+
+<p>制作一个Bootable OS X installer(这里制作的是Mavericks的installer)：</p>
+
+<blockquote><ol>
+<li><p>去App Store下载OS X，下载完后不要点安装，可以再/Applications/目录下找到Install OS X Mavericks.app。</p></li>
+<li><p>准备一个有8GB或者以上容量的U盘，或者移动硬盘(我是给移动硬盘创建了一个8GB的分区)，插USB，假设挂载在了/Volumes/OSXInstaller目录下。</p></li>
+<li><p>使用Install OS X Mavericks.app自带的工具来制作启动盘。</p></li>
+<li><p>打开终端，执行命令：
+   <code>$ /Applications/Install\ OS\ X\ Mavericks.app/Contents/Resources/createinstallmedia</code></p></li>
+<li><p>该命令会提示你按一定的格式使用该命令， 应该加上系统安装器的目的路径，如上面假设的/Volumes/OSXInstaller。</p></li>
+<li><p>等待一会儿。</p></li>
+<li><p>Done.</p></li>
+</ol>
+</blockquote>
+
+<h3>更换硬盘</h3>
+
+<ul>
+<li><p>操作前关机拔电。</p></li>
+<li><p>拆开底部面板(记得保持螺丝有序，稍用心看就会发现中间左右两个短螺丝和其他的几颗短螺丝是不一样的)，可以看到HDD在电池旁边。
+<img src="/images/install_ssd/origin_hdd.JPG"></p></li>
+<li><p>取出原有的HDD仅需取下HDD和光驱之间的两颗螺丝。
+<img src="/images/install_ssd/remove_sidebar.JPG"></p></li>
+<li><p>拔出sata数据线。
+<img src="/images/install_ssd/remove_sata_cable.JPG"></p></li>
+<li><p>将HDD周边的4颗螺丝取下，装在SSD上。
+<img src="/images/install_ssd/set_crews.JPG"></p></li>
+<li><p>装入SSD，并固定好螺丝(这里在SSD正面安装了SanDisk提供的衬垫来帮助固定)。
+<img src="/images/install_ssd/put_ssd2bay.JPG"></p></li>
+<li><p>Done.</p>
+
+<blockquote><p>Tips: 建议底部面板完成系统安装后再上螺丝，避免因意外而引起不必要的麻烦。</p></blockquote></li>
+</ul>
+
+
+<h3>安装系统</h3>
+
+<p>因为之前系统被自己折腾的很是糟糕，已经无力回天了，所以<strong>备份好数据</strong>重装系统。
+* 插入bootable OS X installer(这里我用的是一个移动硬盘)，按<code>OPTION</code>键，可以进入启动盘的选择界面。
+<img src="/images/install_ssd/boot2install.JPG"></p>
+
+<ul>
+<li><p>使用Disk Utility给新安装的硬盘分区。这里选择一个分区，选择Mac OS Extended(Journaled)分区格式，点击分区下方的<code>OPTION</code>选项，因为我的是intel-based的Mac，所以选择GUID分区表。点击<code>Apply</code>完成分区。
+<img src="/images/install_ssd/partition.JPG">
+<img src="/images/install_ssd/partition_schema.JPG"></p></li>
+<li><p>关闭Disk Utility, 在菜单中选择安装系统。选择将OS X安装到新的SSD。等待2分钟后，系统自动重启后继续安装，又等待20分钟后，完成安装。
+<img src="/images/install_ssd/install_os_x.JPG"></p></li>
+</ul>
+
+
+<blockquote><p>如果不需要重装系统，可以事先用TimeMachine备份好自己的系统，然后在菜单中选择从TimeMachine中恢复即可。</p></blockquote>
+
+<h3>结束语</h3>
+
+<p>从现在开始，老Mac又可以跑的飞快咯！使用了一周，总的来说，SSD的更换还是非常值得的，极大的降低了个人撑懒腰、喝水、看风景的频率，工作学习从此更加得心应手。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/04/16/re-enable-key-repeat-in-os-x-mavericks/">Re-enable Key Repeat in OS X Mavericks</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-16T16:06:20+08:00" pubdate data-updated="true">Apr 16<span>th</span>, 2014</time>
+        
+         
+          | <a href="/blog/2014/04/16/re-enable-key-repeat-in-os-x-mavericks/#comments">Comments</a>
+         
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>今天在安装idealVim的时候，提示我是否需要Enable key repeat，没有过脑子就点了No，结果在vim操作时就有些小崩溃了。长按<code>hjkl</code>时没有办法连续移动。因此还是想办法重新Enable key repeat吧。</p>
+
+<p>在命令行中执行以下命令</p>
+
+<pre><code>$ defaults write -g ApplePressAndHoldEnabled -bool false
+</code></pre>
+
+<p>重启，搞定。</p>
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -721,11 +782,11 @@
       </li>
     
       <li class="post">
-        <a href="/blog/2014/07/09/i-am-new-to-maven/">I Am New to Maven</a>
+        <a href="/blog/2014/06/12/maven-dependency-mediation/">Maven Dependency Mediation</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2014/06/12/maven-dependency-mediation/">Maven Dependency Mediation</a>
+        <a href="/blog/2014/05/29/32bit-or-64bit/">32bit or 64bit</a>
       </li>
     
   </ul>
