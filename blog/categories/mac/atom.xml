@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Mac | San Domingo's Blog]]></title>
   <link href="http://sandomingo.github.io/blog/categories/mac/atom.xml" rel="self"/>
   <link href="http://sandomingo.github.io/"/>
-  <updated>2014-09-23T00:44:24+08:00</updated>
+  <updated>2014-10-19T17:11:34+08:00</updated>
   <id>http://sandomingo.github.io/</id>
   <author>
     <name><![CDATA[San Domingo]]></name>
@@ -152,6 +152,7 @@
 <li>iTunes (系统自带) 听音乐，Podcast</li>
 <li><a href="http://www.macupdate.com/app/mac/23430/x-lossless-decoder">XLD</a>: 无损音频解码器，支持无损格式的音乐播放</li>
 <li><a href="http://www.obdev.at/products/launchbar/download.html">LaunchBar</a>: 桌面启动器，比spotlight更好用（升Yosemite后估计就不太用得着了）的借助索引的启动器，剪贴板功能很实用，而且可以免费实用(Alfred好贵..TAT)</li>
+<li><a href="http://www.eudic.net/">Eudic</a> 词典，支持屏幕取词和划词解释。</li>
 </ul>
 
 
@@ -167,6 +168,7 @@
 <li><p><a href="http://iterm2.com/downloads.html">iTerm2</a>: 更好用的终端，其中的分屏功能很实用。</p></li>
 <li><a href="http://www.sublimetext.com/2">Sublime Text2</a>: 轻便的文本编辑器</li>
 <li><a href="http://mouapp.com/">Mou</a>: Markdown编辑器</li>
+<li><a href="http://www.sequelpro.com/">Sequel Pro</a>: MySQL客户端</li>
 <li>Wunderlist(App Store): Go-To-Do软件，跨平台，免费</li>
 </ul>
 
