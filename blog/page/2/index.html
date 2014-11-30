@@ -9,7 +9,7 @@
   <meta name="author" content="San Domingo">
 
   
-  <meta name="description" content="今天被坑惨了TAT，重新安装了Mavericks后，使用thunderbolt转VGA外接显示器时遇到了分辨率的问题：外接显示器支持1080P的分辨率，但在OS X的Display设置中只能选择最高1280*1024的分辨率。google了许久，尝试了重启、合上盖外接显示器重启， &hellip;">
+  <meta name="description" content="今天在安装idealVim的时候，提示我是否需要Enable key repeat，没有过脑子就点了No，结果在vim操作时就有些小崩溃了。长按hjkl时没有办法连续移动。因此还是想办法重新Enable key repeat吧。 在命令行中执行以下命令 $ defaults write -g &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +65,52 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/04/16/re-enable-key-repeat-in-os-x-mavericks/">Re-enable Key Repeat in OS X Mavericks</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-16T16:06:20+08:00" pubdate data-updated="true">Apr 16<span>th</span>, 2014</time>
+        
+         
+          | <a href="/blog/2014/04/16/re-enable-key-repeat-in-os-x-mavericks/#comments">Comments</a>
+         
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>今天在安装idealVim的时候，提示我是否需要Enable key repeat，没有过脑子就点了No，结果在vim操作时就有些小崩溃了。长按<code>hjkl</code>时没有办法连续移动。因此还是想办法重新Enable key repeat吧。</p>
+
+<p>在命令行中执行以下命令</p>
+
+<pre><code>$ defaults write -g ApplePressAndHoldEnabled -bool false
+</code></pre>
+
+<p>重启，搞定。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -534,6 +580,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/11/30/rescue-my-macbook/">Macbook修复万金油</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/07/28/class-not-found-exception-and-error/">Class Not Found Exception and Error</a>
       </li>
     
@@ -547,10 +597,6 @@
     
       <li class="post">
         <a href="/blog/2014/06/12/maven-dependency-mediation/">Maven Dependency Mediation</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/05/29/32bit-or-64bit/">32bit or 64bit</a>
       </li>
     
   </ul>

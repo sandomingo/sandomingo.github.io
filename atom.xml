@@ -4,7 +4,7 @@
   <title><![CDATA[San Domingo's Blog]]></title>
   <link href="http://sandomingo.github.io/atom.xml" rel="self"/>
   <link href="http://sandomingo.github.io/"/>
-  <updated>2014-10-19T17:11:34+08:00</updated>
+  <updated>2014-11-30T12:55:56+08:00</updated>
   <id>http://sandomingo.github.io/</id>
   <author>
     <name><![CDATA[San Domingo]]></name>
@@ -12,6 +12,94 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Macbook修复万金油]]></title>
+    <link href="http://sandomingo.github.io/blog/2014/11/30/rescue-my-macbook/"/>
+    <updated>2014-11-30T11:26:28+08:00</updated>
+    <id>http://sandomingo.github.io/blog/2014/11/30/rescue-my-macbook</id>
+    <content type="html"><![CDATA[<p>Macbook正常使用极少出现问题，但一不小心碰到一个意外反而会让人不知所错。想想早年使用Windows时，纵使出现黑屏、蓝屏、卡成狗的情况，也可以坦然的面对，悠然的fix it，还很是怀念。这里开始记录一些修复Mac的万金油方式，等我有足够的RP遇到足够的问题的时候，这篇blog也就差不多算是写完善了。</p>
+
+<h2>重置PRAM</h2>
+
+<p>PRAM(Parameter random-access memory, 在基于Intel的Mac上也称为PRAM)：存储了一些可以让OS X快速访问到的设置，例如指定的启动盘，显示分辨率，扬声器音量等。</p>
+
+<h4>已解决问题</h4>
+
+<ul>
+<li>开机后一直黑屏，甚至没有白苹果。</li>
+</ul>
+
+
+<h4>重置步骤：</h4>
+
+<ol>
+<li>关机</li>
+<li>在键盘上找到如下四个按键：<code>Option</code>, <code>Command(⌘)</code>, <code>P</code>和<code>R</code>，熟悉其位置，在步骤4中需要同时按下</li>
+<li>按电源键开机</li>
+<li>按了开机键后立刻同时按住<code>Option</code>, <code>Command</code>, <code>P</code>, <code>R</code>四个键。需要确保在出现灰色屏幕之前按下。保持按键直到Mac重启，再次听到开机音</li>
+<li>同时松开全部按键</li>
+</ol>
+
+
+<p>Ref: <a href="http://support.apple.com/kb/PH14222?viewlocale=en_US">Apple Docs</a></p>
+
+<p>P.S.(个人经历)：在重置PRAM后Macbook仍然有问题时，可以尝试重置2-3次(保持按键直至Mac第二第三次重启再释放)。</p>
+
+<h2>SingleUser模式</h2>
+
+<h4>已解决问题</h4>
+
+<ul>
+<li>覆盖安装Yosemite Beta后，丢失管理员权限，通过进入SingleUser模式，删除/var/db/.AppleSetupDone后解决</li>
+</ul>
+
+
+<h4>在单用户或详细模式下启动</h4>
+
+<ol>
+<li>关闭 Mac（如果处于打开状态）。</li>
+<li>按电源按钮以启动电脑。</li>
+<li>立即按住 Command (Apple) 键和以下按键之一：
+
+<ul>
+<li>“s”键（用于单用户模式）。  (Command-S)</li>
+<li>“v”键（用于详细模式）。  (Command-V)</li>
+</ul>
+</li>
+<li>当看到屏幕上出现白色文字时，即成功进入单用户模式或详细模式。</li>
+</ol>
+
+
+<p>Ref: <a href="http://support.apple.com/zh-cn/ht1492">Apple Docs</a> &ndash;<a href="http://www.cnet.com/how-to/how-to-quickly-restore-a-missing-admin-account-in-os-x/">Quickly restore a missing admin account in OS X</a></p>
+
+<h2>重置SMC</h2>
+
+<p>SMC(System Mangement  Controller)：负责管理Mc的很多低级功能，例如对开机键做出相应，对Macbook的屏幕盖开合做出响应，环境广度感应等。</p>
+
+<p>有时候SMC可能会出现问题，而导致系统出现异常行为。有些情况下，重置SMC可能是解决问题的唯一方法。但是！！！要尽可能通过其他方式来解决故障，重置SMC应该只是你最后的，压箱底的选择。</p>
+
+<h4>已解决问题</h4>
+
+<ul>
+<li>暂时还没有使出这压箱底的大招</li>
+</ul>
+
+
+<h4>重置步骤(针对09年之后的Macbook)：</h4>
+
+<ol>
+<li>关机</li>
+<li>确保Mac的电源已经连接</li>
+<li>同时按下（左侧）Shift-Control-Option 键和电源按钮。</li>
+<li>同时松开所有按键</li>
+<li>按电源键开机</li>
+</ol>
+
+
+<p>Ref：<a href="http://support.apple.com/zh-cn/HT3964">Apple Docs</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Class Not Found Exception and Error]]></title>
